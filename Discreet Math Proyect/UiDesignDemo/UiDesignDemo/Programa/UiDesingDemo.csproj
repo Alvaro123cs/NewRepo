@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E3491ED-3B11-42EC-85F5-733E2052EFC9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Programa</RootNamespace>
+    <AssemblyName>Programa</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculadora.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Calculadora.Designer.cs">
+      <DependentUpon>Calculadora.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Relacion Inversa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relacion Inversa.Designer.cs">
+      <DependentUpon>Relacion Inversa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relacion Transitiva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relacion Transitiva.Designer.cs">
+      <DependentUpon>Relacion Transitiva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelacionesyMatrices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelacionesyMatrices.Designer.cs">
+      <DependentUpon>RelacionesyMatrices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relacion_Composicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relacion_Composicion.Designer.cs">
+      <DependentUpon>Relacion_Composicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProposicionY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProposicionY.Designer.cs">
+      <DependentUpon>ProposicionY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Negacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Negacion.Designer.cs">
+      <DependentUpon>Negacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proposiciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proposiciones.Designer.cs">
+      <DependentUpon>Proposiciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relacion Asimetrica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relacion Asimetrica.Designer.cs">
+      <DependentUpon>Relacion Asimetrica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relacion Reflexiva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relacion Reflexiva.Designer.cs">
+      <DependentUpon>Relacion Reflexiva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relacion Simetrica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relacion Simetrica.Designer.cs">
+      <DependentUpon>Relacion Simetrica.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculadora.resx">
+      <DependentUpon>Calculadora.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relacion Inversa.resx">
+      <DependentUpon>Relacion Inversa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relacion Transitiva.resx">
+      <DependentUpon>Relacion Transitiva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelacionesyMatrices.resx">
+      <DependentUpon>RelacionesyMatrices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relacion_Composicion.resx">
+      <DependentUpon>Relacion_Composicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProposicionY.resx">
+      <DependentUpon>ProposicionY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Negacion.resx">
+      <DependentUpon>Negacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Proposiciones.resx">
+      <DependentUpon>Proposiciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relacion Asimetrica.resx">
+      <DependentUpon>Relacion Asimetrica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relacion Reflexiva.resx">
+      <DependentUpon>Relacion Reflexiva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relacion Simetrica.resx">
+      <DependentUpon>Relacion Simetrica.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
