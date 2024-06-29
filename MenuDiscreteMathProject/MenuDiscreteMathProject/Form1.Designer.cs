@@ -43,7 +43,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(28, 26);
+            pictureBox1.Location = new Point(41, 26);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(125, 122);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -55,7 +55,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Black", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(352, 49);
+            label1.Location = new Point(336, 41);
             label1.Name = "label1";
             label1.Size = new Size(223, 46);
             label1.TabIndex = 1;

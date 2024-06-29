@@ -62,7 +62,7 @@
             // iconoMinimizar
             // 
             iconoMinimizar.Image = (Image)resources.GetObject("iconoMinimizar.Image");
-            iconoMinimizar.Location = new Point(663, 11);
+            iconoMinimizar.Location = new Point(663, 10);
             iconoMinimizar.Name = "iconoMinimizar";
             iconoMinimizar.Size = new Size(39, 29);
             iconoMinimizar.SizeMode = PictureBoxSizeMode.Zoom;
@@ -82,6 +82,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)iconocerrar).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconoMaxMin).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconoMinimizar).EndInit();

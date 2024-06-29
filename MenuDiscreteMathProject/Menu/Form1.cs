@@ -23,5 +23,10 @@ namespace Menu
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
