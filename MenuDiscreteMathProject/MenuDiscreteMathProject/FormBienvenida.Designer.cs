@@ -53,7 +53,7 @@
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(36, 86);
+            pictureBox1.Location = new Point(36, 89);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(787, 200);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -83,7 +83,7 @@
             btnCerrar.Text = "X";
             btnCerrar.Click += btnCerrar_Click;
             // 
-            // Form3
+            // FormBienvenida
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -94,7 +94,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form3";
+            Name = "FormBienvenida";
             Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
