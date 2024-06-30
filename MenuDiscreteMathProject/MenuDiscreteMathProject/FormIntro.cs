@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace MenuDiscreteMathProject
 {
-    public partial class Form3 : Form
+    public partial class FormIntro : Form
     {
-        public Form3()
+        public FormIntro()
         {
             InitializeComponent();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

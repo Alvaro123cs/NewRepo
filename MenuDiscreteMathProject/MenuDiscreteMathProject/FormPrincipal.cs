@@ -11,9 +11,9 @@ using System.Runtime.InteropServices;
 
 namespace MenuDiscreteMathProject
 {
-    public partial class Form1 : Form
+    public partial class FormPrincipal : Form
     {
-        public Form1()
+        public FormPrincipal()
         {
             InitializeComponent();
         }
@@ -107,39 +107,34 @@ namespace MenuDiscreteMathProject
 
         }
 
-        private void AbrirFormInPanel(object FormHijo)
+        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
-            if (FormHijo == null)
             {
-                // Manejo de caso donde FormHijo es null, si es necesario
-                return;
-            }
+                Form formulario = ContenedorForms.Controls.OfType<MiForm>().FirstOrDefault() ?? new MiForm(); // Utiliza el operador de coalescencia nula para asegurar que formulario no sea nulo
 
-            if (this.ContenedorForms.Controls.Count > 0)
-                this.ContenedorForms.Controls.RemoveAt(0);
+                if (!ContenedorForms.Controls.Contains(formulario))
+                {
+                    formulario.TopLevel = false;
+                    formulario.FormBorderStyle = FormBorderStyle.None;
+                    formulario.Dock = DockStyle.Fill;
+                    ContenedorForms.Controls.Add(formulario);
+                    ContenedorForms.Tag = formulario;
+                    formulario.Show();
+                    formulario.BringToFront();
+                }
 
-            if (FormHijo is Form fh)
-            {
-                fh.TopLevel = false;
-                fh.Dock = DockStyle.Fill;
-                this.ContenedorForms.Controls.Add(fh);
-                this.ContenedorForms.Tag = fh;
-                fh.Show();
-            }
-            else
-            {
-                // Manejo de caso donde FormHijo no es un Form
+                formulario.BringToFront();
             }
         }
         private void btnBi_Click(object sender, EventArgs e)
         {
 
-            AbrirFormInPanel(new Form3());
+            AbrirFormulario<FormBienvenida>();
         }
 
         private void btnInt_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new Form2());
+            AbrirFormulario<FormIntro>();
         }
     }
 }

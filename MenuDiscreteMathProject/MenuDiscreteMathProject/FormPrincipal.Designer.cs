@@ -1,6 +1,6 @@
 ﻿namespace MenuDiscreteMathProject
 {
-    partial class Form1
+    partial class FormPrincipal
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             pictureBox1 = new PictureBox();
             label1 = new Label();
             iconoMinimizar = new PictureBox();
@@ -74,10 +74,10 @@
             // 
             label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
-            label1.Font = new Font("Bookman Old Style", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(242, 10);
+            label1.Font = new Font("Bookman Old Style", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(278, 10);
             label1.Name = "label1";
-            label1.Size = new Size(343, 28);
+            label1.Size = new Size(261, 21);
             label1.TabIndex = 1;
             label1.Text = "Discrete Math Final Project";
             label1.Click += label1_Click;
@@ -210,9 +210,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(6, 6);
+            pictureBox2.Location = new Point(0, 0);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(76, 78);
+            pictureBox2.Size = new Size(852, 487);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -255,7 +255,7 @@
             ContenedorForms.TabIndex = 9;
             ContenedorForms.Paint += ContenedorForms_Paint;
             // 
-            // Form1
+            // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -264,7 +264,8 @@
             Controls.Add(BarraTitulo);
             Controls.Add(MenuVertical);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
+            Name = "FormPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
