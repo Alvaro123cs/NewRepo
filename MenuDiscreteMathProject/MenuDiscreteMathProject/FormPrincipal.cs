@@ -121,20 +121,24 @@ namespace MenuDiscreteMathProject
                     ContenedorForms.Tag = formulario;
                     formulario.Show();
                     formulario.BringToFront();
+                    
                 }
 
                 formulario.BringToFront();
             }
         }
-        private void btnBi_Click(object sender, EventArgs e)
+        
+            private void btnBi_Click(object sender, EventArgs e)
         {
 
             AbrirFormulario<FormBienvenida>();
+            
         }
 
         private void btnInt_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FormIntro>();
+            
         }
     }
 }
