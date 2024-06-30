@@ -1,8 +1,8 @@
 namespace Menu
 {
-    public partial class Form1 : Form
+    public partial class Bienvenidaa : Form
     {
-        public Form1()
+        public Bienvenidaa()
         {
             InitializeComponent();
         }
@@ -15,9 +15,10 @@ namespace Menu
 
         private void iconoMaxMin_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            this.WindowState = FormWindowState.Normal;
+            if (this.WindowState == FormWindowState.Normal) this.WindowState = FormWindowState.Maximized;
+            else this.WindowState = FormWindowState.Normal;
         }
+    
 
         private void iconoMinimizar_Click(object sender, EventArgs e)
         {

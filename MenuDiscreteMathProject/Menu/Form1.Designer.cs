@@ -1,6 +1,6 @@
 ﻿namespace Menu
 {
-    partial class Form1
+    partial class Bienvenidaa
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,71 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            iconocerrar = new PictureBox();
-            iconoMaxMin = new PictureBox();
-            iconoMinimizar = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)iconocerrar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)iconoMaxMin).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)iconoMinimizar).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bienvenidaa));
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // iconocerrar
+            // label1
             // 
-            iconocerrar.Image = (Image)resources.GetObject("iconocerrar.Image");
-            iconocerrar.Location = new Point(753, 11);
-            iconocerrar.Name = "iconocerrar";
-            iconocerrar.Size = new Size(39, 29);
-            iconocerrar.SizeMode = PictureBoxSizeMode.Zoom;
-            iconocerrar.TabIndex = 0;
-            iconocerrar.TabStop = false;
-            iconocerrar.Click += iconocerrar_Click;
+            label1.Anchor = AnchorStyles.Top;
+            label1.AutoSize = true;
+            label1.Font = new Font("Bookman Old Style", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(478, 34);
+            label1.Name = "label1";
+            label1.Size = new Size(145, 28);
+            label1.TabIndex = 3;
+            label1.Text = "Bienvenida";
+            label1.TextAlign = ContentAlignment.TopCenter;
             // 
-            // iconoMaxMin
+            // pictureBox1
             // 
-            iconoMaxMin.Image = (Image)resources.GetObject("iconoMaxMin.Image");
-            iconoMaxMin.Location = new Point(708, 11);
-            iconoMaxMin.Name = "iconoMaxMin";
-            iconoMaxMin.Size = new Size(39, 29);
-            iconoMaxMin.SizeMode = PictureBoxSizeMode.Zoom;
-            iconoMaxMin.TabIndex = 1;
-            iconoMaxMin.TabStop = false;
-            iconoMaxMin.Click += iconoMaxMin_Click;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(115, 85);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(901, 239);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
             // 
-            // iconoMinimizar
-            // 
-            iconoMinimizar.Image = (Image)resources.GetObject("iconoMinimizar.Image");
-            iconoMinimizar.Location = new Point(663, 10);
-            iconoMinimizar.Name = "iconoMinimizar";
-            iconoMinimizar.Size = new Size(39, 29);
-            iconoMinimizar.SizeMode = PictureBoxSizeMode.Zoom;
-            iconoMinimizar.TabIndex = 2;
-            iconoMinimizar.TabStop = false;
-            iconoMinimizar.Click += iconoMinimizar_Click;
-            // 
-            // Form1
+            // Bienvenidaa
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(iconoMinimizar);
-            Controls.Add(iconoMaxMin);
-            Controls.Add(iconocerrar);
+            ClientSize = new Size(1102, 609);
+            Controls.Add(pictureBox1);
+            Controls.Add(label1);
             Cursor = Cursors.Hand;
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
+            Name = "Bienvenidaa";
             Text = "Form1";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)iconocerrar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)iconoMaxMin).EndInit();
-            ((System.ComponentModel.ISupportInitialize)iconoMinimizar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private PictureBox iconocerrar;
-        private PictureBox iconoMaxMin;
-        private PictureBox iconoMinimizar;
+        private Label label1;
+        private PictureBox pictureBox1;
     }
 }
