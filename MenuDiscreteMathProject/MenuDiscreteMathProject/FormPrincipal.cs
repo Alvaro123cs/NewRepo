@@ -39,9 +39,16 @@ namespace MenuDiscreteMathProject
         private void iconoMaxMin_Click(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Normal)
+            {
                 this.WindowState = FormWindowState.Maximized;
+                this.Region = null; // Eliminar la región al maximizar
+            }
             else
+            {
                 this.WindowState = FormWindowState.Normal;
+                // Restaurar la región al volver a la ventana normal
+                SetWindowRegion();
+            }
         }
 
         private void iconoMinimizar_Click(object sender, EventArgs e)
@@ -116,7 +123,15 @@ namespace MenuDiscreteMathProject
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            Graphics g = e.Graphics;
+            if (this.WindowState != FormWindowState.Maximized) // Evitar redibujar la región si la ventana está maximizada
+            {
+                SetWindowRegion();
+            }
+        }
+
+        private void SetWindowRegion()
+        {
+            Graphics g = this.CreateGraphics();
             g.SmoothingMode = SmoothingMode.AntiAlias;
 
             using (GraphicsPath path = new GraphicsPath())

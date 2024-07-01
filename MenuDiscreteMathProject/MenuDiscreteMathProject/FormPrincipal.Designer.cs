@@ -45,6 +45,7 @@
             BarraTitulo = new Panel();
             btnMenu = new PictureBox();
             ContenedorForms = new Panel();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoMinimizar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoMaxMin).BeginInit();
@@ -213,7 +214,7 @@
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(0, 0);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(852, 482);
+            pictureBox2.Size = new Size(852, 481);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -248,6 +249,7 @@
             // 
             // ContenedorForms
             // 
+            ContenedorForms.Controls.Add(label2);
             ContenedorForms.Controls.Add(pictureBox2);
             ContenedorForms.Dock = DockStyle.Fill;
             ContenedorForms.Location = new Point(250, 50);
@@ -255,6 +257,17 @@
             ContenedorForms.Size = new Size(852, 559);
             ContenedorForms.TabIndex = 9;
             ContenedorForms.Paint += ContenedorForms_Paint;
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Top;
+            label2.AutoSize = true;
+            label2.Font = new Font("Bookman Old Style", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(561, 508);
+            label2.Name = "label2";
+            label2.Size = new Size(279, 21);
+            label2.TabIndex = 2;
+            label2.Text = "3er Semestre Periodo 1-2024";
             // 
             // FormPrincipal
             // 
@@ -282,6 +295,7 @@
             BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)btnMenu).EndInit();
             ContenedorForms.ResumeLayout(false);
+            ContenedorForms.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -303,5 +317,6 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox5;
         private Button btnPag;
+        private Label label2;
     }
 }
