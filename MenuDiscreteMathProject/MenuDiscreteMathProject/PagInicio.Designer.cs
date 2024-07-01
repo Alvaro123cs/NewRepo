@@ -37,6 +37,8 @@
             label1 = new Label();
             btnCerrar = new Label();
             label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -44,7 +46,7 @@
             // 
             label5.Anchor = AnchorStyles.Top;
             label5.Font = new Font("Bookman Old Style", 10.8F);
-            label5.Location = new Point(607, 228);
+            label5.Location = new Point(607, 233);
             label5.Name = "label5";
             label5.Size = new Size(216, 29);
             label5.TabIndex = 21;
@@ -55,18 +57,18 @@
             // 
             label4.Anchor = AnchorStyles.Top;
             label4.Font = new Font("Bookman Old Style", 10.8F);
-            label4.Location = new Point(326, 228);
+            label4.Location = new Point(326, 233);
             label4.Name = "label4";
-            label4.Size = new Size(216, 47);
+            label4.Size = new Size(216, 29);
             label4.TabIndex = 20;
-            label4.Text = "Relaciones de Conjuntos";
+            label4.Text = "Notación de Conjuntos";
             label4.TextAlign = ContentAlignment.TopCenter;
             // 
             // label3
             // 
             label3.Anchor = AnchorStyles.Top;
             label3.Font = new Font("Bookman Old Style", 10.8F);
-            label3.Location = new Point(41, 402);
+            label3.Location = new Point(41, 415);
             label3.Name = "label3";
             label3.Size = new Size(216, 29);
             label3.TabIndex = 19;
@@ -77,7 +79,7 @@
             // 
             label2.Anchor = AnchorStyles.Top;
             label2.Font = new Font("Bookman Old Style", 10.8F);
-            label2.Location = new Point(50, 228);
+            label2.Location = new Point(50, 233);
             label2.Name = "label2";
             label2.Size = new Size(216, 29);
             label2.TabIndex = 18;
@@ -87,7 +89,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(12, 12);
+            pictureBox2.Location = new Point(8, 6);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(65, 55);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -98,7 +100,7 @@
             // 
             label1.Anchor = AnchorStyles.Top;
             label1.Font = new Font("Bookman Old Style", 10.8F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
-            label1.Location = new Point(41, 70);
+            label1.Location = new Point(41, 63);
             label1.Name = "label1";
             label1.Size = new Size(782, 42);
             label1.TabIndex = 16;
@@ -130,11 +132,35 @@
             label6.Text = "X";
             label6.Click += label6_Click;
             // 
-            // Form1
+            // label7
+            // 
+            label7.Anchor = AnchorStyles.Top;
+            label7.Font = new Font("Bookman Old Style", 10.8F);
+            label7.Location = new Point(326, 415);
+            label7.Name = "label7";
+            label7.Size = new Size(216, 29);
+            label7.TabIndex = 23;
+            label7.Text = "Relaciones";
+            label7.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // label8
+            // 
+            label8.Anchor = AnchorStyles.Top;
+            label8.Font = new Font("Bookman Old Style", 10.8F);
+            label8.Location = new Point(607, 415);
+            label8.Name = "label8";
+            label8.Size = new Size(216, 29);
+            label8.TabIndex = 24;
+            label8.Text = "Probabilidad";
+            label8.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // PagInicio
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(852, 559);
+            Controls.Add(label8);
+            Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -144,7 +170,7 @@
             Controls.Add(label1);
             Controls.Add(btnCerrar);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
+            Name = "PagInicio";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
@@ -161,5 +187,7 @@
         private Label label1;
         private Label btnCerrar;
         private Label label6;
+        private Label label7;
+        private Label label8;
     }
 }
