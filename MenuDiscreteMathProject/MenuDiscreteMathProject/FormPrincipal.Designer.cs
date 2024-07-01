@@ -46,6 +46,9 @@
             btnMenu = new PictureBox();
             ContenedorForms = new Panel();
             label2 = new Label();
+            menuStrip1 = new MenuStrip();
+            acerdaDeToolStripMenuItem = new ToolStripMenuItem();
+            ayudaToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoMinimizar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoMaxMin).BeginInit();
@@ -58,6 +61,7 @@
             BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnMenu).BeginInit();
             ContenedorForms.SuspendLayout();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // pictureBox1
@@ -158,6 +162,7 @@
             btnPag.TabIndex = 5;
             btnPag.Text = "Página de Inicio";
             btnPag.UseVisualStyleBackColor = true;
+            btnPag.Click += btnPag_Click;
             // 
             // pictureBox4
             // 
@@ -210,11 +215,11 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Location = new Point(-1, 1);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(852, 481);
+            pictureBox2.Size = new Size(853, 480);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -250,6 +255,7 @@
             // ContenedorForms
             // 
             ContenedorForms.Controls.Add(label2);
+            ContenedorForms.Controls.Add(menuStrip1);
             ContenedorForms.Controls.Add(pictureBox2);
             ContenedorForms.Dock = DockStyle.Fill;
             ContenedorForms.Location = new Point(250, 50);
@@ -260,14 +266,39 @@
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.Top;
-            label2.AutoSize = true;
+            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label2.Font = new Font("Bookman Old Style", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(561, 508);
             label2.Name = "label2";
             label2.Size = new Size(279, 21);
             label2.TabIndex = 2;
             label2.Text = "3er Semestre Periodo 1-2024";
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Anchor = AnchorStyles.Top;
+            menuStrip1.Dock = DockStyle.None;
+            menuStrip1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { acerdaDeToolStripMenuItem, ayudaToolStripMenuItem });
+            menuStrip1.LayoutStyle = ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            menuStrip1.Location = new Point(683, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(169, 28);
+            menuStrip1.TabIndex = 3;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // acerdaDeToolStripMenuItem
+            // 
+            acerdaDeToolStripMenuItem.Name = "acerdaDeToolStripMenuItem";
+            acerdaDeToolStripMenuItem.Size = new Size(93, 24);
+            acerdaDeToolStripMenuItem.Text = "Acerda de";
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            ayudaToolStripMenuItem.Size = new Size(68, 24);
+            ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // FormPrincipal
             // 
@@ -278,6 +309,7 @@
             Controls.Add(BarraTitulo);
             Controls.Add(MenuVertical);
             FormBorderStyle = FormBorderStyle.None;
+            MainMenuStrip = menuStrip1;
             Name = "FormPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
@@ -296,6 +328,8 @@
             ((System.ComponentModel.ISupportInitialize)btnMenu).EndInit();
             ContenedorForms.ResumeLayout(false);
             ContenedorForms.PerformLayout();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -318,5 +352,8 @@
         private PictureBox pictureBox5;
         private Button btnPag;
         private Label label2;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem acerdaDeToolStripMenuItem;
+        private ToolStripMenuItem ayudaToolStripMenuItem;
     }
 }

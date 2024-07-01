@@ -151,5 +151,10 @@ namespace MenuDiscreteMathProject
                 }
             }
         }
+
+        private void btnPag_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<PagInicio>();
+        }
     }
 }
