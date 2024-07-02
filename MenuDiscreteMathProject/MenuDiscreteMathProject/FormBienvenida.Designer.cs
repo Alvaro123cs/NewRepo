@@ -83,6 +83,8 @@
             label2.TabIndex = 8;
             label2.Text = resources.GetString("label2.Text");
             label2.TextAlign = ContentAlignment.TopCenter;
+            label2.Click += label2_Click;
+            label2.Paint += label2_Paint;
             // 
             // pictureBox1
             // 

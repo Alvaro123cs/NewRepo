@@ -18,7 +18,7 @@ namespace MenuDiscreteMathProject.AcercaDe_Ayuda
             this.Resize += new EventHandler(AcercaDe_Resize);
         }
 
-        private void AcercaDe_Resize(object sender, EventArgs e)
+        private void AcercaDe_Resize(object? sender, EventArgs e)
         {
             int formWidth = this.ClientSize.Width;
             int formHeight = this.ClientSize.Height;
