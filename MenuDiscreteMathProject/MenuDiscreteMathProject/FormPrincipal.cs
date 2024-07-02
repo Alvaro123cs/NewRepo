@@ -8,7 +8,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing.Drawing2D; // Asegúrate de incluir esta línea esta libreria sirve para ajustar el borde suave
+using System.Drawing.Drawing2D;
+using MenuDiscreteMathProject.AcercaDe_Ayuda; // Asegúrate de incluir esta línea esta libreria sirve para ajustar el borde suave
 
 namespace MenuDiscreteMathProject
 {
@@ -155,6 +156,18 @@ namespace MenuDiscreteMathProject
         private void btnPag_Click(object sender, EventArgs e)
         {
             AbrirFormulario<PagInicio>();
+        }
+
+        private void acerdaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<AcercaDe_Ayuda.AcercaDe>();
+
+
+        }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<MenuDiscreteMathProject.AcercaDe_Ayuda.Ayuda>();
         }
     }
 }

@@ -284,7 +284,7 @@
             menuStrip1.LayoutStyle = ToolStripLayoutStyle.HorizontalStackWithOverflow;
             menuStrip1.Location = new Point(683, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(169, 28);
+            menuStrip1.Size = new Size(319, 28);
             menuStrip1.TabIndex = 3;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -293,12 +293,14 @@
             acerdaDeToolStripMenuItem.Name = "acerdaDeToolStripMenuItem";
             acerdaDeToolStripMenuItem.Size = new Size(93, 24);
             acerdaDeToolStripMenuItem.Text = "Acerda de";
+            acerdaDeToolStripMenuItem.Click += acerdaDeToolStripMenuItem_Click;
             // 
             // ayudaToolStripMenuItem
             // 
             ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             ayudaToolStripMenuItem.Size = new Size(68, 24);
             ayudaToolStripMenuItem.Text = "Ayuda";
+            ayudaToolStripMenuItem.Click += ayudaToolStripMenuItem_Click;
             // 
             // FormPrincipal
             // 
