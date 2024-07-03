@@ -28,74 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            button1 = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(50, 212);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 26);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Calcular";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(91, 263);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(79, 32);
+            button1.TabIndex = 0;
+            button1.Text = "Calcular";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(323, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            label1.AutoSize = true;
+            label1.Location = new Point(323, 41);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 20);
+            label1.TabIndex = 1;
+            label1.Click += label1_Click;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Producto Cartesiano";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(57, 58);
+            label2.Name = "label2";
+            label2.Size = new Size(172, 23);
+            label2.TabIndex = 2;
+            label2.Text = "Producto Cartesiano";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(50, 154);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 33);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            textBox1.Location = new Point(57, 185);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(155, 40);
+            textBox1.TabIndex = 3;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(50, 78);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(155, 29);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            textBox2.Location = new Point(57, 102);
+            textBox2.Margin = new Padding(3, 4, 3, 4);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(155, 35);
+            textBox2.TabIndex = 4;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // ProductoCartesiano
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 308);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Name = "ProductoCartesiano";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(323, 385);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(button1);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "ProductoCartesiano";
+            Text = "Form1";
+            Load += ProductoCartesiano_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

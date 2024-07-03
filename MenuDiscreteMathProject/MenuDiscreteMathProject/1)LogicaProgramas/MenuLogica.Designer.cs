@@ -64,8 +64,9 @@
             // 
             proposicionesLógicasToolStripMenuItem.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             proposicionesLógicasToolStripMenuItem.Name = "proposicionesLógicasToolStripMenuItem";
-            proposicionesLógicasToolStripMenuItem.Size = new Size(197, 27);
-            proposicionesLógicasToolStripMenuItem.Text = "Proposiciones Lógicas";
+            proposicionesLógicasToolStripMenuItem.Size = new Size(154, 27);
+            proposicionesLógicasToolStripMenuItem.Text = "Tabla de Verdad";
+            proposicionesLógicasToolStripMenuItem.Click += proposicionesLógicasToolStripMenuItem_Click;
             // 
             // negaciónToolStripMenuItem
             // 
@@ -73,13 +74,15 @@
             negaciónToolStripMenuItem.Name = "negaciónToolStripMenuItem";
             negaciónToolStripMenuItem.Size = new Size(99, 27);
             negaciónToolStripMenuItem.Text = "Negación";
+            negaciónToolStripMenuItem.Click += negaciónToolStripMenuItem_Click;
             // 
             // proposiciónYToolStripMenuItem
             // 
             proposiciónYToolStripMenuItem.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             proposiciónYToolStripMenuItem.Name = "proposiciónYToolStripMenuItem";
-            proposiciónYToolStripMenuItem.Size = new Size(158, 27);
-            proposiciónYToolStripMenuItem.Text = "Proposición \" Y \"";
+            proposiciónYToolStripMenuItem.Size = new Size(240, 27);
+            proposiciónYToolStripMenuItem.Text = "Proposición \" AND\" y \"OR\"";
+            proposiciónYToolStripMenuItem.Click += proposiciónYToolStripMenuItem_Click;
             // 
             // MenuLogica
             // 

@@ -64,6 +64,7 @@
             productoCartesianoToolStripMenuItem.Name = "productoCartesianoToolStripMenuItem";
             productoCartesianoToolStripMenuItem.Size = new Size(186, 27);
             productoCartesianoToolStripMenuItem.Text = "Producto Cartesiano";
+            productoCartesianoToolStripMenuItem.Click += productoCartesianoToolStripMenuItem_Click;
             // 
             // MenuLenguaje
             // 

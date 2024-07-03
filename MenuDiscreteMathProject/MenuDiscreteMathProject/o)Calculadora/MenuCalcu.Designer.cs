@@ -65,6 +65,7 @@
             calculadora1ToolStripMenuItem.Name = "calculadora1ToolStripMenuItem";
             calculadora1ToolStripMenuItem.Size = new Size(145, 27);
             calculadora1ToolStripMenuItem.Text = "Calculadora (1)";
+            calculadora1ToolStripMenuItem.Click += calculadora1ToolStripMenuItem_Click;
             // 
             // calculadora2ToolStripMenuItem
             // 
@@ -72,6 +73,7 @@
             calculadora2ToolStripMenuItem.Name = "calculadora2ToolStripMenuItem";
             calculadora2ToolStripMenuItem.Size = new Size(145, 27);
             calculadora2ToolStripMenuItem.Text = "Calculadora (2)";
+            calculadora2ToolStripMenuItem.Click += calculadora2ToolStripMenuItem_Click;
             // 
             // MenuCalcu
             // 

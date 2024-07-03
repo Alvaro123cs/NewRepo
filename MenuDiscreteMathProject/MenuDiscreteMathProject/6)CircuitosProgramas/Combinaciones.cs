@@ -61,5 +61,11 @@ namespace Combinacion
             a = b;
             b = temp;
         }
+
+        private void Combinaciones_Load(object sender, EventArgs e)
+        {
+
+           
+    }
     }
 }

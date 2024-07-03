@@ -93,5 +93,10 @@ namespace CoheficienteBinomiales
                 resultLabel.Text = "Por favor, introduce un valor válido para n (n >= 0).";
             }
         }
+
+        private void CoeBinobiales_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

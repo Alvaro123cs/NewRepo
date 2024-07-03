@@ -66,6 +66,7 @@
             coeficientesBinomialesToolStripMenuItem.Name = "coeficientesBinomialesToolStripMenuItem";
             coeficientesBinomialesToolStripMenuItem.Size = new Size(213, 27);
             coeficientesBinomialesToolStripMenuItem.Text = "Coeficientes Binomiales";
+            coeficientesBinomialesToolStripMenuItem.Click += coeficientesBinomialesToolStripMenuItem_Click;
             // 
             // combinacionesToolStripMenuItem
             // 
@@ -73,6 +74,7 @@
             combinacionesToolStripMenuItem.Name = "combinacionesToolStripMenuItem";
             combinacionesToolStripMenuItem.Size = new Size(145, 27);
             combinacionesToolStripMenuItem.Text = "Combinaciones";
+            combinacionesToolStripMenuItem.Click += combinacionesToolStripMenuItem_Click;
             // 
             // trianguloDePascalToolStripMenuItem
             // 
@@ -80,6 +82,7 @@
             trianguloDePascalToolStripMenuItem.Name = "trianguloDePascalToolStripMenuItem";
             trianguloDePascalToolStripMenuItem.Size = new Size(178, 27);
             trianguloDePascalToolStripMenuItem.Text = "Triangulo de Pascal";
+            trianguloDePascalToolStripMenuItem.Click += trianguloDePascalToolStripMenuItem_Click;
             // 
             // MenuCircuitos
             // 

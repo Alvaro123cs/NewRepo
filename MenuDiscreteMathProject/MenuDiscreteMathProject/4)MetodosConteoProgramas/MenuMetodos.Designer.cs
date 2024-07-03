@@ -65,6 +65,7 @@
             calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
             calculadoraToolStripMenuItem.Size = new Size(118, 27);
             calculadoraToolStripMenuItem.Text = "Calculadora";
+            calculadoraToolStripMenuItem.Click += calculadoraToolStripMenuItem_Click;
             // 
             // combinacionesToolStripMenuItem
             // 
@@ -72,6 +73,7 @@
             combinacionesToolStripMenuItem.Name = "combinacionesToolStripMenuItem";
             combinacionesToolStripMenuItem.Size = new Size(145, 27);
             combinacionesToolStripMenuItem.Text = "Combinaciones";
+            combinacionesToolStripMenuItem.Click += combinacionesToolStripMenuItem_Click;
             // 
             // MenuMetodos
             // 

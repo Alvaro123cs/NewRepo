@@ -21,5 +21,10 @@ namespace CalculadoraCientifica
         {
 
         }
+
+        private void Cal1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

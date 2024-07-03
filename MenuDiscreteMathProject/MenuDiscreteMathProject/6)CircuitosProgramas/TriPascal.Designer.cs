@@ -17,78 +17,79 @@
 
         private void InitializeComponent()
         {
-            this.nTextBox = new System.Windows.Forms.TextBox();
-            this.calculateButton = new System.Windows.Forms.Button();
-            this.resultLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            nTextBox = new TextBox();
+            calculateButton = new Button();
+            resultLabel = new Label();
+            label1 = new Label();
+            label2 = new Label();
+            SuspendLayout();
             // 
             // nTextBox
             // 
-            this.nTextBox.Location = new System.Drawing.Point(61, 76);
-            this.nTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.nTextBox.Name = "nTextBox";
-            this.nTextBox.Size = new System.Drawing.Size(229, 22);
-            this.nTextBox.TabIndex = 0;
+            nTextBox.Location = new Point(61, 95);
+            nTextBox.Margin = new Padding(4, 5, 4, 5);
+            nTextBox.Name = "nTextBox";
+            nTextBox.Size = new Size(229, 27);
+            nTextBox.TabIndex = 0;
             // 
             // calculateButton
             // 
-            this.calculateButton.Location = new System.Drawing.Point(61, 117);
-            this.calculateButton.Margin = new System.Windows.Forms.Padding(4);
-            this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(229, 41);
-            this.calculateButton.TabIndex = 1;
-            this.calculateButton.Text = "Calcular";
-            this.calculateButton.UseVisualStyleBackColor = true;
-            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
+            calculateButton.Location = new Point(61, 146);
+            calculateButton.Margin = new Padding(4, 5, 4, 5);
+            calculateButton.Name = "calculateButton";
+            calculateButton.Size = new Size(229, 51);
+            calculateButton.TabIndex = 1;
+            calculateButton.Text = "Calcular";
+            calculateButton.UseVisualStyleBackColor = true;
+            calculateButton.Click += calculateButton_Click;
             // 
             // resultLabel
             // 
-            this.resultLabel.Location = new System.Drawing.Point(336, 76);
-            this.resultLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.resultLabel.MaximumSize = new System.Drawing.Size(533, 300);
-            this.resultLabel.MinimumSize = new System.Drawing.Size(533, 300);
-            this.resultLabel.Name = "resultLabel";
-            this.resultLabel.Size = new System.Drawing.Size(533, 300);
-            this.resultLabel.TabIndex = 2;
-            this.resultLabel.Text = "Triangulo de Pascal";
-            this.resultLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            resultLabel.Location = new Point(336, 95);
+            resultLabel.Margin = new Padding(4, 0, 4, 0);
+            resultLabel.MaximumSize = new Size(533, 375);
+            resultLabel.MinimumSize = new Size(533, 375);
+            resultLabel.Name = "resultLabel";
+            resultLabel.Size = new Size(533, 375);
+            resultLabel.TabIndex = 2;
+            resultLabel.Text = "Triangulo de Pascal";
+            resultLabel.TextAlign = ContentAlignment.TopCenter;
+            resultLabel.Click += resultLabel_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(567, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Resultado";
+            label1.AutoSize = true;
+            label1.Location = new Point(567, 54);
+            label1.Name = "label1";
+            label1.Size = new Size(75, 20);
+            label1.TabIndex = 3;
+            label1.Text = "Resultado";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(108, 43);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Ingrese valor de n";
+            label2.AutoSize = true;
+            label2.Location = new Point(108, 54);
+            label2.Name = "label2";
+            label2.Size = new Size(127, 20);
+            label2.TabIndex = 4;
+            label2.Text = "Ingrese valor de n";
             // 
-            // Form1
+            // TriPascal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 376);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.resultLabel);
-            this.Controls.Add(this.calculateButton);
-            this.Controls.Add(this.nTextBox);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
-            this.Text = "Coeficiente Binomial";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(882, 470);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(resultLabel);
+            Controls.Add(calculateButton);
+            Controls.Add(nTextBox);
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "TriPascal";
+            Text = "Coeficiente Binomial";
+            Load += TriPascal_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         private System.Windows.Forms.Label label1;

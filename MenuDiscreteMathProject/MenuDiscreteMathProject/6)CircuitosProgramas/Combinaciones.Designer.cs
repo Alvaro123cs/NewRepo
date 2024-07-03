@@ -28,78 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtLetras = new System.Windows.Forms.TextBox();
-            this.btnGenerar = new System.Windows.Forms.Button();
-            this.lstPermutaciones = new System.Windows.Forms.ListBox();
-            this.lblTotal = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            txtLetras = new TextBox();
+            btnGenerar = new Button();
+            lstPermutaciones = new ListBox();
+            lblTotal = new Label();
+            label1 = new Label();
+            SuspendLayout();
             // 
             // txtLetras
             // 
-            this.txtLetras.Location = new System.Drawing.Point(13, 49);
-            this.txtLetras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtLetras.Name = "txtLetras";
-            this.txtLetras.Size = new System.Drawing.Size(345, 22);
-            this.txtLetras.TabIndex = 0;
+            txtLetras.Location = new Point(13, 61);
+            txtLetras.Margin = new Padding(4, 5, 4, 5);
+            txtLetras.Name = "txtLetras";
+            txtLetras.Size = new Size(345, 27);
+            txtLetras.TabIndex = 0;
             // 
             // btnGenerar
             // 
-            this.btnGenerar.Location = new System.Drawing.Point(260, 81);
-            this.btnGenerar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnGenerar.Name = "btnGenerar";
-            this.btnGenerar.Size = new System.Drawing.Size(100, 28);
-            this.btnGenerar.TabIndex = 1;
-            this.btnGenerar.Text = "Generar";
-            this.btnGenerar.UseVisualStyleBackColor = true;
-            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
+            btnGenerar.Location = new Point(260, 101);
+            btnGenerar.Margin = new Padding(4, 5, 4, 5);
+            btnGenerar.Name = "btnGenerar";
+            btnGenerar.Size = new Size(100, 35);
+            btnGenerar.TabIndex = 1;
+            btnGenerar.Text = "Generar";
+            btnGenerar.UseVisualStyleBackColor = true;
+            btnGenerar.Click += btnGenerar_Click;
             // 
             // lstPermutaciones
             // 
-            this.lstPermutaciones.FormattingEnabled = true;
-            this.lstPermutaciones.ItemHeight = 16;
-            this.lstPermutaciones.Location = new System.Drawing.Point(13, 116);
-            this.lstPermutaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lstPermutaciones.Name = "lstPermutaciones";
-            this.lstPermutaciones.Size = new System.Drawing.Size(345, 164);
-            this.lstPermutaciones.TabIndex = 2;
+            lstPermutaciones.FormattingEnabled = true;
+            lstPermutaciones.Location = new Point(13, 145);
+            lstPermutaciones.Margin = new Padding(4, 5, 4, 5);
+            lstPermutaciones.Name = "lstPermutaciones";
+            lstPermutaciones.Size = new Size(345, 204);
+            lstPermutaciones.TabIndex = 2;
             // 
             // lblTotal
             // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(13, 290);
-            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(173, 17);
-            this.lblTotal.TabIndex = 3;
-            this.lblTotal.Text = "Total de permutaciones: 0";
+            lblTotal.AutoSize = true;
+            lblTotal.Location = new Point(13, 362);
+            lblTotal.Margin = new Padding(4, 0, 4, 0);
+            lblTotal.Name = "lblTotal";
+            lblTotal.Size = new Size(180, 20);
+            lblTotal.TabIndex = 3;
+            lblTotal.Text = "Total de permutaciones: 0";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 20);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 17);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Ingrese los caracteres a combinar";
+            label1.AutoSize = true;
+            label1.Location = new Point(13, 25);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(230, 20);
+            label1.TabIndex = 4;
+            label1.Text = "Ingrese los caracteres a combinar";
             // 
-            // Form1
+            // Combinaciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(382, 327);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblTotal);
-            this.Controls.Add(this.lstPermutaciones);
-            this.Controls.Add(this.btnGenerar);
-            this.Controls.Add(this.txtLetras);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
-            this.Text = "Permutaciones de Letras";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(382, 409);
+            Controls.Add(label1);
+            Controls.Add(lblTotal);
+            Controls.Add(lstPermutaciones);
+            Controls.Add(btnGenerar);
+            Controls.Add(txtLetras);
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "Combinaciones";
+            Text = "Permutaciones de Letras";
+            Load += Combinaciones_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

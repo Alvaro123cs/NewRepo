@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApplication6;
 
 namespace MenuDiscreteMathProject._2_LenguajeMathProgramas
 {
@@ -20,6 +21,12 @@ namespace MenuDiscreteMathProject._2_LenguajeMathProgramas
         private void label6_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void productoCartesianoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProductoCartesiano productoCartesianoForm = new ProductoCartesiano();
+            productoCartesianoForm.Show();
         }
     }
 }

@@ -78,5 +78,10 @@ namespace WindowsFormsApplication6
         {
             // Este evento se activa cuando cambia el texto en textBox2
         }
+
+        private void ProductoCartesiano_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

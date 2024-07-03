@@ -84,7 +84,7 @@
             label2.TabIndex = 4;
             label2.Text = "Ingrese una cantidad: ";
             // 
-            // Form1
+            // Combi
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -94,8 +94,9 @@
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(listBox1);
-            Name = "Form1";
+            Name = "Combi";
             Text = "Form1";
+            Load += Combi_Load;
             ResumeLayout(false);
             PerformLayout();
         }
