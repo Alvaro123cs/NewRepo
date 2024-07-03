@@ -21,5 +21,90 @@ namespace MenuDiscreteMathProject
         {
             this.Close();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PagInicio_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureLogica_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureLenguaje_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureRelaciones_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureMetodos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureRecurrencia_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureCircuitos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureConversione_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureCalculadora_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

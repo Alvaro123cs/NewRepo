@@ -29,64 +29,84 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PagInicio));
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
+            labelMetodos = new Label();
+            labelLenguaje = new Label();
+            labelCircuitos = new Label();
+            labelLogica = new Label();
             pictureBox2 = new PictureBox();
             label1 = new Label();
             btnCerrar = new Label();
             label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
+            labelRelaciones = new Label();
+            labelRecurrencias = new Label();
+            labelConversiones = new Label();
+            labelCalculadora = new Label();
+            pictureLogica = new PictureBox();
+            pictureMetodos = new PictureBox();
+            pictureLenguaje = new PictureBox();
+            pictureRecurrencia = new PictureBox();
+            pictureRelaciones = new PictureBox();
+            pictureCircuitos = new PictureBox();
+            pictureConversione = new PictureBox();
+            pictureCalculadora = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureLogica).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureMetodos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureLenguaje).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureRecurrencia).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureRelaciones).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureCircuitos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureConversione).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureCalculadora).BeginInit();
             SuspendLayout();
             // 
-            // label5
+            // labelMetodos
             // 
-            label5.Anchor = AnchorStyles.Top;
-            label5.Font = new Font("Bookman Old Style", 10.8F);
-            label5.Location = new Point(58, 304);
-            label5.Name = "label5";
-            label5.Size = new Size(216, 29);
-            label5.TabIndex = 21;
-            label5.Text = "4) Métodos de Conteo";
-            label5.TextAlign = ContentAlignment.TopCenter;
+            labelMetodos.Anchor = AnchorStyles.Top;
+            labelMetodos.Font = new Font("Bookman Old Style", 10.8F);
+            labelMetodos.Location = new Point(58, 304);
+            labelMetodos.Name = "labelMetodos";
+            labelMetodos.Size = new Size(216, 29);
+            labelMetodos.TabIndex = 21;
+            labelMetodos.Text = "4) Métodos de Conteo";
+            labelMetodos.TextAlign = ContentAlignment.TopCenter;
+            labelMetodos.Click += label5_Click;
             // 
-            // label4
+            // labelLenguaje
             // 
-            label4.Anchor = AnchorStyles.Top;
-            label4.Font = new Font("Bookman Old Style", 10.8F);
-            label4.Location = new Point(326, 153);
-            label4.Name = "label4";
-            label4.Size = new Size(216, 44);
-            label4.TabIndex = 20;
-            label4.Text = "2) El lenguaje de las Matemáticas";
-            label4.TextAlign = ContentAlignment.TopCenter;
+            labelLenguaje.Anchor = AnchorStyles.Top;
+            labelLenguaje.Font = new Font("Bookman Old Style", 10.8F);
+            labelLenguaje.Location = new Point(326, 153);
+            labelLenguaje.Name = "labelLenguaje";
+            labelLenguaje.Size = new Size(216, 44);
+            labelLenguaje.TabIndex = 20;
+            labelLenguaje.Text = "2) El lenguaje de las Matemáticas";
+            labelLenguaje.TextAlign = ContentAlignment.TopCenter;
+            labelLenguaje.Click += label4_Click;
             // 
-            // label3
+            // labelCircuitos
             // 
-            label3.Anchor = AnchorStyles.Top;
-            label3.Font = new Font("Bookman Old Style", 10.8F);
-            label3.Location = new Point(609, 304);
-            label3.Name = "label3";
-            label3.Size = new Size(216, 54);
-            label3.TabIndex = 19;
-            label3.Text = "6) Circuitos Combinatorios";
-            label3.TextAlign = ContentAlignment.TopCenter;
+            labelCircuitos.Anchor = AnchorStyles.Top;
+            labelCircuitos.Font = new Font("Bookman Old Style", 10.8F);
+            labelCircuitos.Location = new Point(609, 304);
+            labelCircuitos.Name = "labelCircuitos";
+            labelCircuitos.Size = new Size(216, 54);
+            labelCircuitos.TabIndex = 19;
+            labelCircuitos.Text = "6) Circuitos Combinatorios";
+            labelCircuitos.TextAlign = ContentAlignment.TopCenter;
+            labelCircuitos.Click += label3_Click;
             // 
-            // label2
+            // labelLogica
             // 
-            label2.Anchor = AnchorStyles.Top;
-            label2.Font = new Font("Bookman Old Style", 10.8F);
-            label2.Location = new Point(50, 153);
-            label2.Name = "label2";
-            label2.Size = new Size(216, 44);
-            label2.TabIndex = 18;
-            label2.Text = "1) Lógica y Demostraciones";
-            label2.TextAlign = ContentAlignment.TopCenter;
+            labelLogica.Anchor = AnchorStyles.Top;
+            labelLogica.Font = new Font("Bookman Old Style", 10.8F);
+            labelLogica.Location = new Point(50, 153);
+            labelLogica.Name = "labelLogica";
+            labelLogica.Size = new Size(216, 44);
+            labelLogica.TabIndex = 18;
+            labelLogica.Text = "1) Lógica y Demostraciones";
+            labelLogica.TextAlign = ContentAlignment.TopCenter;
+            labelLogica.Click += label2_Click;
             // 
             // pictureBox2
             // 
@@ -102,7 +122,7 @@
             // 
             label1.Anchor = AnchorStyles.Top;
             label1.Font = new Font("Bookman Old Style", 10.8F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
-            label1.Location = new Point(58, 34);
+            label1.Location = new Point(58, 31);
             label1.Name = "label1";
             label1.Size = new Size(782, 42);
             label1.TabIndex = 16;
@@ -134,88 +154,214 @@
             label6.Text = "X";
             label6.Click += label6_Click;
             // 
-            // label7
+            // labelRelaciones
             // 
-            label7.Anchor = AnchorStyles.Top;
-            label7.Font = new Font("Bookman Old Style", 10.8F);
-            label7.Location = new Point(607, 153);
-            label7.Name = "label7";
-            label7.Size = new Size(216, 29);
-            label7.TabIndex = 23;
-            label7.Text = "3) Relaciones";
-            label7.TextAlign = ContentAlignment.TopCenter;
+            labelRelaciones.Anchor = AnchorStyles.Top;
+            labelRelaciones.Font = new Font("Bookman Old Style", 10.8F);
+            labelRelaciones.Location = new Point(607, 153);
+            labelRelaciones.Name = "labelRelaciones";
+            labelRelaciones.Size = new Size(216, 29);
+            labelRelaciones.TabIndex = 23;
+            labelRelaciones.Text = "3) Relaciones";
+            labelRelaciones.TextAlign = ContentAlignment.TopCenter;
+            labelRelaciones.Click += label7_Click;
             // 
-            // label8
+            // labelRecurrencias
             // 
-            label8.Anchor = AnchorStyles.Top;
-            label8.Font = new Font("Bookman Old Style", 10.8F);
-            label8.Location = new Point(337, 304);
-            label8.Name = "label8";
-            label8.Size = new Size(216, 45);
-            label8.TabIndex = 24;
-            label8.Text = "5) Relaciones de Recurrencia";
-            label8.TextAlign = ContentAlignment.TopCenter;
+            labelRecurrencias.Anchor = AnchorStyles.Top;
+            labelRecurrencias.Font = new Font("Bookman Old Style", 10.8F);
+            labelRecurrencias.Location = new Point(337, 304);
+            labelRecurrencias.Name = "labelRecurrencias";
+            labelRecurrencias.Size = new Size(216, 45);
+            labelRecurrencias.TabIndex = 24;
+            labelRecurrencias.Text = "5) Relaciones de Recurrencia";
+            labelRecurrencias.TextAlign = ContentAlignment.TopCenter;
+            labelRecurrencias.Click += label8_Click;
             // 
-            // label9
+            // labelConversiones
             // 
-            label9.Anchor = AnchorStyles.Top;
-            label9.Font = new Font("Bookman Old Style", 10.8F);
-            label9.Location = new Point(189, 433);
-            label9.Name = "label9";
-            label9.Size = new Size(216, 29);
-            label9.TabIndex = 25;
-            label9.Text = "o) Conversiones";
-            label9.TextAlign = ContentAlignment.TopCenter;
+            labelConversiones.Anchor = AnchorStyles.Top;
+            labelConversiones.Font = new Font("Bookman Old Style", 10.8F);
+            labelConversiones.Location = new Point(178, 448);
+            labelConversiones.Name = "labelConversiones";
+            labelConversiones.Size = new Size(216, 29);
+            labelConversiones.TabIndex = 25;
+            labelConversiones.Text = "o) Conversiones";
+            labelConversiones.TextAlign = ContentAlignment.TopCenter;
+            labelConversiones.Click += label9_Click;
             // 
-            // label10
+            // labelCalculadora
             // 
-            label10.Anchor = AnchorStyles.Top;
-            label10.Font = new Font("Bookman Old Style", 10.8F);
-            label10.Location = new Point(477, 433);
-            label10.Name = "label10";
-            label10.Size = new Size(216, 44);
-            label10.TabIndex = 26;
-            label10.Text = "o) Calculadora Científica";
-            label10.TextAlign = ContentAlignment.TopCenter;
+            labelCalculadora.Anchor = AnchorStyles.Top;
+            labelCalculadora.Font = new Font("Bookman Old Style", 10.8F);
+            labelCalculadora.Location = new Point(477, 448);
+            labelCalculadora.Name = "labelCalculadora";
+            labelCalculadora.Size = new Size(216, 44);
+            labelCalculadora.TabIndex = 26;
+            labelCalculadora.Text = "o) Calculadora Científica";
+            labelCalculadora.TextAlign = ContentAlignment.TopCenter;
+            labelCalculadora.Click += label10_Click;
+            // 
+            // pictureLogica
+            // 
+            pictureLogica.Anchor = AnchorStyles.Top;
+            pictureLogica.Image = (Image)resources.GetObject("pictureLogica.Image");
+            pictureLogica.Location = new Point(87, 70);
+            pictureLogica.Name = "pictureLogica";
+            pictureLogica.Size = new Size(157, 81);
+            pictureLogica.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureLogica.TabIndex = 27;
+            pictureLogica.TabStop = false;
+            pictureLogica.Click += pictureLogica_Click;
+            // 
+            // pictureMetodos
+            // 
+            pictureMetodos.Anchor = AnchorStyles.Top;
+            pictureMetodos.Image = (Image)resources.GetObject("pictureMetodos.Image");
+            pictureMetodos.Location = new Point(87, 221);
+            pictureMetodos.Name = "pictureMetodos";
+            pictureMetodos.Size = new Size(157, 81);
+            pictureMetodos.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureMetodos.TabIndex = 28;
+            pictureMetodos.TabStop = false;
+            pictureMetodos.Click += pictureMetodos_Click;
+            // 
+            // pictureLenguaje
+            // 
+            pictureLenguaje.Anchor = AnchorStyles.Top;
+            pictureLenguaje.Image = (Image)resources.GetObject("pictureLenguaje.Image");
+            pictureLenguaje.Location = new Point(357, 70);
+            pictureLenguaje.Name = "pictureLenguaje";
+            pictureLenguaje.Size = new Size(164, 81);
+            pictureLenguaje.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureLenguaje.TabIndex = 29;
+            pictureLenguaje.TabStop = false;
+            pictureLenguaje.Click += pictureLenguaje_Click;
+            // 
+            // pictureRecurrencia
+            // 
+            pictureRecurrencia.Anchor = AnchorStyles.Top;
+            pictureRecurrencia.Image = (Image)resources.GetObject("pictureRecurrencia.Image");
+            pictureRecurrencia.Location = new Point(357, 221);
+            pictureRecurrencia.Name = "pictureRecurrencia";
+            pictureRecurrencia.Size = new Size(164, 81);
+            pictureRecurrencia.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureRecurrencia.TabIndex = 30;
+            pictureRecurrencia.TabStop = false;
+            pictureRecurrencia.Click += pictureRecurrencia_Click;
+            // 
+            // pictureRelaciones
+            // 
+            pictureRelaciones.Anchor = AnchorStyles.Top;
+            pictureRelaciones.Image = (Image)resources.GetObject("pictureRelaciones.Image");
+            pictureRelaciones.Location = new Point(641, 70);
+            pictureRelaciones.Name = "pictureRelaciones";
+            pictureRelaciones.Size = new Size(151, 81);
+            pictureRelaciones.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureRelaciones.TabIndex = 31;
+            pictureRelaciones.TabStop = false;
+            pictureRelaciones.Click += pictureRelaciones_Click;
+            // 
+            // pictureCircuitos
+            // 
+            pictureCircuitos.Anchor = AnchorStyles.Top;
+            pictureCircuitos.Image = (Image)resources.GetObject("pictureCircuitos.Image");
+            pictureCircuitos.Location = new Point(641, 221);
+            pictureCircuitos.Name = "pictureCircuitos";
+            pictureCircuitos.Size = new Size(151, 81);
+            pictureCircuitos.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureCircuitos.TabIndex = 32;
+            pictureCircuitos.TabStop = false;
+            pictureCircuitos.Click += pictureCircuitos_Click;
+            // 
+            // pictureConversione
+            // 
+            pictureConversione.Anchor = AnchorStyles.Top;
+            pictureConversione.Image = (Image)resources.GetObject("pictureConversione.Image");
+            pictureConversione.Location = new Point(219, 356);
+            pictureConversione.Name = "pictureConversione";
+            pictureConversione.Size = new Size(145, 81);
+            pictureConversione.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureConversione.TabIndex = 33;
+            pictureConversione.TabStop = false;
+            pictureConversione.Click += pictureConversione_Click;
+            // 
+            // pictureCalculadora
+            // 
+            pictureCalculadora.Anchor = AnchorStyles.Top;
+            pictureCalculadora.Image = (Image)resources.GetObject("pictureCalculadora.Image");
+            pictureCalculadora.Location = new Point(519, 356);
+            pictureCalculadora.Name = "pictureCalculadora";
+            pictureCalculadora.Size = new Size(134, 81);
+            pictureCalculadora.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureCalculadora.TabIndex = 34;
+            pictureCalculadora.TabStop = false;
+            pictureCalculadora.Click += pictureCalculadora_Click;
             // 
             // PagInicio
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlLight;
             ClientSize = new Size(852, 559);
-            Controls.Add(label10);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(label7);
+            Controls.Add(pictureCalculadora);
+            Controls.Add(pictureConversione);
+            Controls.Add(pictureCircuitos);
+            Controls.Add(pictureRelaciones);
+            Controls.Add(pictureRecurrencia);
+            Controls.Add(pictureLenguaje);
+            Controls.Add(pictureMetodos);
+            Controls.Add(pictureLogica);
+            Controls.Add(labelCalculadora);
+            Controls.Add(labelConversiones);
+            Controls.Add(labelRecurrencias);
+            Controls.Add(labelRelaciones);
             Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(labelMetodos);
+            Controls.Add(labelLenguaje);
+            Controls.Add(labelCircuitos);
+            Controls.Add(labelLogica);
             Controls.Add(pictureBox2);
             Controls.Add(label1);
             Controls.Add(btnCerrar);
             FormBorderStyle = FormBorderStyle.None;
             Name = "PagInicio";
             Text = "Form1";
+            Load += PagInicio_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureLogica).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureMetodos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureLenguaje).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureRecurrencia).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureRelaciones).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureCircuitos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureConversione).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureCalculadora).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label5;
-        private Label label4;
-        private Label label3;
-        private Label label2;
+        private Label labelMetodos;
+        private Label labelLenguaje;
+        private Label labelCircuitos;
+        private Label labelLogica;
         private PictureBox pictureBox2;
         private Label label1;
         private Label btnCerrar;
         private Label label6;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private Label label10;
+        private Label labelRelaciones;
+        private Label labelRecurrencias;
+        private Label labelConversiones;
+        private Label labelCalculadora;
+        private PictureBox pictureLogica;
+        private PictureBox pictureMetodos;
+        private PictureBox pictureLenguaje;
+        private PictureBox pictureRecurrencia;
+        private PictureBox pictureRelaciones;
+        private PictureBox pictureCircuitos;
+        private PictureBox pictureConversione;
+        private PictureBox pictureCalculadora;
     }
 }

@@ -33,9 +33,9 @@
             pictureBox2 = new PictureBox();
             btnCerrar = new Label();
             label2 = new Label();
-            pictureBox4 = new PictureBox();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -84,24 +84,25 @@
             label2.Text = resources.GetString("label2.Text");
             label2.TextAlign = ContentAlignment.TopCenter;
             // 
-            // pictureBox4
+            // pictureBox1
             // 
-            pictureBox4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(286, 337);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(292, 212);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 15;
-            pictureBox4.TabStop = false;
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox1.Enabled = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(263, 350);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(349, 197);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
             // 
             // FormIntro
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.WhiteSmoke;
+            BackColor = SystemColors.ControlLight;
             ClientSize = new Size(852, 559);
-            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
             Controls.Add(label2);
             Controls.Add(btnCerrar);
@@ -110,7 +111,7 @@
             Name = "FormIntro";
             Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -121,6 +122,6 @@
         private PictureBox pictureBox2;
         private Label btnCerrar;
         private Label label2;
-        private PictureBox pictureBox4;
+        private PictureBox pictureBox1;
     }
 }

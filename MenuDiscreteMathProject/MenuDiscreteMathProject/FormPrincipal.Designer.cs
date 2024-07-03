@@ -254,6 +254,7 @@
             // 
             // ContenedorForms
             // 
+            ContenedorForms.BackColor = SystemColors.Control;
             ContenedorForms.Controls.Add(label2);
             ContenedorForms.Controls.Add(menuStrip1);
             ContenedorForms.Controls.Add(pictureBox2);
@@ -284,7 +285,7 @@
             menuStrip1.LayoutStyle = ToolStripLayoutStyle.HorizontalStackWithOverflow;
             menuStrip1.Location = new Point(683, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(319, 28);
+            menuStrip1.Size = new Size(169, 28);
             menuStrip1.TabIndex = 3;
             menuStrip1.Text = "menuStrip1";
             // 

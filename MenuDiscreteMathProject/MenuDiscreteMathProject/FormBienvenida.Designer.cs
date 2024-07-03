@@ -91,7 +91,7 @@
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Enabled = false;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(269, 283);
+            pictureBox1.Location = new Point(275, 283);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(337, 249);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -102,7 +102,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.WhiteSmoke;
+            BackColor = SystemColors.ControlLight;
             ClientSize = new Size(852, 559);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
