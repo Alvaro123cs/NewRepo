@@ -16,5 +16,10 @@ namespace MenuDiscreteMathProject._4_MetodosConteoProgramas
         {
             InitializeComponent();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

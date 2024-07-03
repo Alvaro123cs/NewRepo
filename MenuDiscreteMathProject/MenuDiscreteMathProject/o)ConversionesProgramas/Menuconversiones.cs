@@ -16,5 +16,15 @@ namespace MenuDiscreteMathProject.o_ConversionesProgramas
         {
             InitializeComponent();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Menuconversiones_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

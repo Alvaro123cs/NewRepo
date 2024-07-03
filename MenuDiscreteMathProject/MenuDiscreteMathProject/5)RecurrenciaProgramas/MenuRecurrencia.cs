@@ -16,5 +16,10 @@ namespace MenuDiscreteMathProject._5_RecurrenciaProgramas
         {
             InitializeComponent();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

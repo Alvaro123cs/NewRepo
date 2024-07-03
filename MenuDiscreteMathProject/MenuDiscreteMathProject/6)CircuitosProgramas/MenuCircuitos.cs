@@ -16,5 +16,10 @@ namespace MenuDiscreteMathProject._6_CircuitosProgramas
         {
             InitializeComponent();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

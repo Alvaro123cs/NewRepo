@@ -95,7 +95,7 @@ namespace MenuDiscreteMathProject
 
         private void pictureBox5_Click(object sender, EventArgs e) { }
 
-        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
+        public void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
             Form formulario = ContenedorForms.Controls.OfType<MiForm>().FirstOrDefault() ?? new MiForm();
             if (!ContenedorForms.Controls.Contains(formulario))
@@ -153,9 +153,17 @@ namespace MenuDiscreteMathProject
             }
         }
 
+        public void CerrarFormulariosEnPanel()
+        {
+            foreach (Form form in ContenedorForms.Controls.OfType<Form>().ToList())
+            {
+                form.Close();
+            }
+        }
         private void btnPag_Click(object sender, EventArgs e)
         {
             AbrirFormulario<PagInicio>();
+            
         }
 
         private void acerdaDeToolStripMenuItem_Click(object sender, EventArgs e)
