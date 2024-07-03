@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuRecurrencia));
             label6 = new Label();
+            menuStrip1 = new MenuStrip();
+            relacionesDeRecurrenciaToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // label6
@@ -44,14 +48,37 @@
             label6.Text = "X";
             label6.Click += label6_Click;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { relacionesDeRecurrenciaToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 31);
+            menuStrip1.TabIndex = 24;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // relacionesDeRecurrenciaToolStripMenuItem
+            // 
+            relacionesDeRecurrenciaToolStripMenuItem.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            relacionesDeRecurrenciaToolStripMenuItem.Name = "relacionesDeRecurrenciaToolStripMenuItem";
+            relacionesDeRecurrenciaToolStripMenuItem.Size = new Size(230, 27);
+            relacionesDeRecurrenciaToolStripMenuItem.Text = "Relaciones de Recurrencia";
+            // 
             // MenuRecurrencia
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(800, 450);
             Controls.Add(label6);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "MenuRecurrencia";
             Text = "MenuRecurrencia";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -59,5 +86,7 @@
         #endregion
 
         private Label label6;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem relacionesDeRecurrenciaToolStripMenuItem;
     }
 }
