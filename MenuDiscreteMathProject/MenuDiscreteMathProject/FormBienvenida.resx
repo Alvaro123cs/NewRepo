@@ -11925,12 +11925,6 @@
         scUWW2yx5VXE4fj/qkEBHdEkxHYAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Bienvenidos a "De los Números a los Algoritmos: Matemáticas Discreta en Computación con C#".
-Nuestro objetivo es ofrecer una guía interactiva y aplicada que permita a los desarrolladores y estudiantes integrar estos poderosos conceptos matemáticos en su programación diaria. Aquí, podrán explorar una serie de programas desarrollados en C# que ejemplifican cómo las matemáticas discretas pueden mejorar la eficiencia y efectividad de sus algoritmos y, en última instancia, el rendimiento del software que crean.
-Esperamos que esta aplicación sea una herramienta valiosa tanto para estudiantes como para las personas interesadas en la computación, inspirándolos a profundizar en el estudio de las matemáticas discretas y a aprovechar todo su potencial en el desarrollo de software. ¡Bienvenidos y disfruten de la experiencia!
-</value>
-  </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAtAAAAIcCAYAAADffZlTAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -23958,6 +23952,12 @@ Esperamos que esta aplicación sea una herramienta valiosa tanto para estudiante
         nwI90C9f2M2fa/oTp7/N7xlPs1w7fTaOW8juLRi3VCx98N7r+9+D66ex3/IviCF3XAQzTtK9h3DeI9Dz
         HiVTV5tJnMNJoMW0tspQbMvnT8Q5zPbp6De/qwvK6qat2iGsH4dA+wWOkzCDX+B4f90xk0RHoLUJH5dA
         Pw+JNu/XCfRrz/7/NDBVIpR5ECkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Bienvenidos a "De los Números a los Algoritmos: Matemáticas Discreta en Computación con C#".
+Nuestro objetivo es ofrecer una guía interactiva y aplicada que permita a los desarrolladores y estudiantes integrar estos poderosos conceptos matemáticos en su programación diaria. Aquí, podrán explorar una serie de programas desarrollados en C# que ejemplifican cómo las matemáticas discretas pueden mejorar la eficiencia y efectividad de sus algoritmos y, en última instancia, el rendimiento del software que crean.
+Esperamos que esta aplicación sea una herramienta valiosa tanto para estudiantes como para las personas interesadas en la computación, inspirándolos a profundizar en el estudio de las matemáticas discretas y a aprovechar todo su potencial en el desarrollo de software. ¡Bienvenidos y disfruten de la experiencia!
 </value>
   </data>
 </root>

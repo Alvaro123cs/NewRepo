@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MenuDiscreteMathProject
 {
@@ -15,7 +16,8 @@ namespace MenuDiscreteMathProject
         public FormBienvenida()
         {
             InitializeComponent();
-            
+
+
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -32,6 +34,31 @@ namespace MenuDiscreteMathProject
         {
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormBienvenida_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
     
