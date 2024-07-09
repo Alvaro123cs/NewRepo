@@ -98,6 +98,7 @@
             Controls.Add(button1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "ProductoCartesiano";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += ProductoCartesiano_Load;
             ResumeLayout(false);

@@ -95,6 +95,7 @@
             Controls.Add(txtLetras);
             Margin = new Padding(4, 5, 4, 5);
             Name = "Combinaciones";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Permutaciones de Letras";
             Load += Combinaciones_Load;
             ResumeLayout(false);

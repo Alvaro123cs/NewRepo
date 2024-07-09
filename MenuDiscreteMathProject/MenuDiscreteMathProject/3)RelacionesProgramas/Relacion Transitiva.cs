@@ -35,27 +35,27 @@ namespace Relacion_Transitiva
 
         }
 
-       private List<string> GenerarRelaciones(string[] elementos)
-       { 
-           List<string> relaciones = new List<string>();
-
-    for (int i = 0; i < elementos.Length; i++)
-    {
-        for (int j = 0; j < elementos.Length; j++)
+        private List<string> GenerarRelaciones(string[] elementos)
         {
-            if (i != j)
-            {
-                relaciones.Add("(" + elementos[i] + ", " + elementos[j] + ")");
-            }
-        }
-    }
+            List<string> relaciones = new List<string>();
 
-    return relaciones;
-        
-            
-       
-       
-       }
+            for (int i = 0; i < elementos.Length; i++)
+            {
+                for (int j = 0; j < elementos.Length; j++)
+                {
+                    if (i != j)
+                    {
+                        relaciones.Add("(" + elementos[i] + ", " + elementos[j] + ")");
+                    }
+                }
+            }
+
+            return relaciones;
+
+
+
+
+        }
 
         private bool EsTransitiva(string[] relaciones)
         {
@@ -107,6 +107,11 @@ namespace Relacion_Transitiva
         }
 
         private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

@@ -63,6 +63,7 @@
             Controls.Add(nTextBox);
             Margin = new Padding(4, 5, 4, 5);
             Name = "CoeBinobiales";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Coeficiente Binomial";
             Load += CoeBinobiales_Load;
             ResumeLayout(false);

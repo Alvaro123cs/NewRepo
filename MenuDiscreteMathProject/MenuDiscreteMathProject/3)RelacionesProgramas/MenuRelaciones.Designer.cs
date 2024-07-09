@@ -78,6 +78,7 @@
             asimétricaToolStripMenuItem.Name = "asimétricaToolStripMenuItem";
             asimétricaToolStripMenuItem.Size = new Size(269, 28);
             asimétricaToolStripMenuItem.Text = "Relacion Asimétrica";
+            asimétricaToolStripMenuItem.Click += asimétricaToolStripMenuItem_Click;
             // 
             // rToolStripMenuItem
             // 
@@ -85,6 +86,7 @@
             rToolStripMenuItem.Name = "rToolStripMenuItem";
             rToolStripMenuItem.Size = new Size(269, 28);
             rToolStripMenuItem.Text = "Relacion Inversa";
+            rToolStripMenuItem.Click += rToolStripMenuItem_Click;
             // 
             // relacionReflexivaToolStripMenuItem
             // 
@@ -92,6 +94,7 @@
             relacionReflexivaToolStripMenuItem.Name = "relacionReflexivaToolStripMenuItem";
             relacionReflexivaToolStripMenuItem.Size = new Size(269, 28);
             relacionReflexivaToolStripMenuItem.Text = "Relacion Reflexiva";
+            relacionReflexivaToolStripMenuItem.Click += relacionReflexivaToolStripMenuItem_Click;
             // 
             // relacionSimetricaToolStripMenuItem
             // 
@@ -99,6 +102,7 @@
             relacionSimetricaToolStripMenuItem.Name = "relacionSimetricaToolStripMenuItem";
             relacionSimetricaToolStripMenuItem.Size = new Size(269, 28);
             relacionSimetricaToolStripMenuItem.Text = "Relacion Simetrica";
+            relacionSimetricaToolStripMenuItem.Click += relacionSimetricaToolStripMenuItem_Click;
             // 
             // relacionTransitivaToolStripMenuItem
             // 
@@ -106,6 +110,7 @@
             relacionTransitivaToolStripMenuItem.Name = "relacionTransitivaToolStripMenuItem";
             relacionTransitivaToolStripMenuItem.Size = new Size(269, 28);
             relacionTransitivaToolStripMenuItem.Text = "Relacion Transitiva";
+            relacionTransitivaToolStripMenuItem.Click += relacionTransitivaToolStripMenuItem_Click;
             // 
             // relacionComposiciónToolStripMenuItem
             // 
@@ -113,6 +118,7 @@
             relacionComposiciónToolStripMenuItem.Name = "relacionComposiciónToolStripMenuItem";
             relacionComposiciónToolStripMenuItem.Size = new Size(269, 28);
             relacionComposiciónToolStripMenuItem.Text = "Relacion Composición";
+            relacionComposiciónToolStripMenuItem.Click += relacionComposiciónToolStripMenuItem_Click;
             // 
             // MenuRelaciones
             // 

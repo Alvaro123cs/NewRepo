@@ -466,6 +466,7 @@
             Controls.Add(button1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Cal1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Cal1_Load;
             ResumeLayout(false);

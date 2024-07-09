@@ -86,6 +86,7 @@
             Controls.Add(nTextBox);
             Margin = new Padding(4, 5, 4, 5);
             Name = "TriPascal";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Coeficiente Binomial";
             Load += TriPascal_Load;
             ResumeLayout(false);

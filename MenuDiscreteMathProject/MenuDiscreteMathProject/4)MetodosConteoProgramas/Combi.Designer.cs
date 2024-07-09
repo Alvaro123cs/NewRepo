@@ -88,13 +88,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(668, 431);
             Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(listBox1);
             Name = "Combi";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Combi_Load;
             ResumeLayout(false);

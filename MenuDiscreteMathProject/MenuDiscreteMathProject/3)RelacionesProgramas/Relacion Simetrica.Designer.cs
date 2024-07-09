@@ -17,89 +17,90 @@
 
         private void InitializeComponent()
         {
-            this.labelResultado = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            labelResultado = new Label();
+            textBox2 = new TextBox();
+            button1 = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            textBox1 = new TextBox();
+            SuspendLayout();
             // 
             // labelResultado
             // 
-            this.labelResultado.AutoSize = true;
-            this.labelResultado.Location = new System.Drawing.Point(50, 326);
-            this.labelResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelResultado.Name = "labelResultado";
-            this.labelResultado.Size = new System.Drawing.Size(0, 17);
-            this.labelResultado.TabIndex = 5;
+            labelResultado.AutoSize = true;
+            labelResultado.Location = new Point(50, 408);
+            labelResultado.Margin = new Padding(4, 0, 4, 0);
+            labelResultado.Name = "labelResultado";
+            labelResultado.Size = new Size(0, 20);
+            labelResultado.TabIndex = 5;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(29, 138);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(265, 122);
-            this.textBox2.TabIndex = 1;
+            textBox2.Location = new Point(29, 172);
+            textBox2.Margin = new Padding(4, 5, 4, 5);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.ScrollBars = ScrollBars.Vertical;
+            textBox2.Size = new Size(265, 152);
+            textBox2.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(29, 285);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(265, 28);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Verificar Simetría";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new Point(29, 356);
+            button1.Margin = new Padding(4, 5, 4, 5);
+            button1.Name = "button1";
+            button1.Size = new Size(265, 35);
+            button1.TabIndex = 2;
+            button1.Text = "Verificar Simetría";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 28);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Ingrese relaciones";
+            label1.AutoSize = true;
+            label1.Location = new Point(25, 35);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(128, 20);
+            label1.TabIndex = 3;
+            label1.Text = "Ingrese relaciones";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 118);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Relaciones Simétricas";
+            label2.AutoSize = true;
+            label2.Location = new Point(25, 148);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(152, 20);
+            label2.TabIndex = 4;
+            label2.Text = "Relaciones Simétricas";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(29, 48);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(265, 22);
-            this.textBox1.TabIndex = 0;
+            textBox1.Location = new Point(29, 60);
+            textBox1.Margin = new Padding(4, 5, 4, 5);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(265, 27);
+            textBox1.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 361);
-            this.Controls.Add(this.labelResultado);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
-            this.Text = "Relación Simétrica";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(330, 451);
+            Controls.Add(labelResultado);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(button1);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Relación Simétrica";
+            Load += Form1_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

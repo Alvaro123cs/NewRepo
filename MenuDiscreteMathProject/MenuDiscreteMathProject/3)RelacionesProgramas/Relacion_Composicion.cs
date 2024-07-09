@@ -70,5 +70,10 @@ namespace Relacion_Composicion
         {
 
         }
+
+        private void Relacion_Composicion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
