@@ -21,5 +21,17 @@ namespace MenuDiscreteMathProject._5_RecurrenciaProgramas
         {
             this.Close();
         }
+
+        private void ecauionesDeOrden1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EcuacionOrden1 ecuacionOrden1 = new EcuacionOrden1();   
+            ecuacionOrden1.Show();
+        }
+
+        private void ecuacionesDeOrden2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EcuacionOrden2 ecuacionOrden2 = new EcuacionOrden2();
+            ecuacionOrden2.Show();
+        }
     }
 }

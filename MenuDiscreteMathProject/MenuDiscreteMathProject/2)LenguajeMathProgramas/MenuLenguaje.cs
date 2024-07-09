@@ -28,5 +28,17 @@ namespace MenuDiscreteMathProject._2_LenguajeMathProgramas
             ProductoCartesiano productoCartesianoForm = new ProductoCartesiano();
             productoCartesianoForm.Show();
         }
+
+        private void unionDeConjutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Union UnionForm = new Union();
+            UnionForm.Show();
+        }
+
+        private void interseccionDeConjutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Interseccion InterseccionForm = new Interseccion();
+            InterseccionForm.Show();
+        }
     }
 }

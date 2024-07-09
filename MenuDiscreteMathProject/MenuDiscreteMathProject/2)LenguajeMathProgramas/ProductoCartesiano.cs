@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApplication6
 {
-    public partial class ProductoCartesiano : Form
+         public partial class ProductoCartesiano : Form
     {
         public ProductoCartesiano()
         {
@@ -16,72 +17,37 @@ namespace WindowsFormsApplication6
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Leer los conjuntos desde los TextBox
-            List<int> setA = ParseInput<int>(textBox1.Text);
-            List<string> setB = ParseInput<string>(textBox2.Text);
+            // Leer las relaciones de los TextBox
+            var relaciones1 = textBox1.Text.Split(';')
+                                           .Select(relacion => relacion.Trim())
+                                           .ToArray();
+            var relaciones2 = textBox2.Text.Split(';')
+                                           .Select(relacion => relacion.Trim())
+                                           .ToArray();
 
             // Obtener el producto cartesiano
-            List<Tuple<int, string>> cartesianProduct = CartesianProduct(setA, setB);
+            var productoCartesiano = ObtenerProductoCartesiano(relaciones1, relaciones2);
 
-            // Construir el resultado en una cadena de texto
-            StringBuilder result = new StringBuilder();
-            foreach (var pair in cartesianProduct)
-            {
-                result.AppendLine("(" + pair.Item1 + ", " + pair.Item2 + ")");
-            }
-
-            // Mostrar el resultado en el label
-            label1.Text = result.ToString();
+            // Mostrar el resultado en el TextBox3
+            textBox3.Text = string.Join("; ", productoCartesiano);
         }
 
-        private List<T> ParseInput<T>(string input)
+        private List<string> ObtenerProductoCartesiano(string[] relaciones1, string[] relaciones2)
         {
-            // Dividir la entrada por comas y eliminar espacios en blanco
-            string[] items = input.Split(',').Select(item => item.Trim()).ToArray();
+            List<string> productoCartesiano = new List<string>();
 
-            // Convertir los elementos a tipo T
-            List<T> result = new List<T>();
-            foreach (string item in items)
+            foreach (var relacion1 in relaciones1)
             {
-                result.Add((T)Convert.ChangeType(item, typeof(T)));
-            }
-
-            return result;
-        }
-
-        private List<Tuple<T1, T2>> CartesianProduct<T1, T2>(List<T1> setA, List<T2> setB)
-        {
-            List<Tuple<T1, T2>> result = new List<Tuple<T1, T2>>();
-
-            foreach (T1 itemA in setA)
-            {
-                foreach (T2 itemB in setB)
+                foreach (var relacion2 in relaciones2)
                 {
-                    result.Add(new Tuple<T1, T2>(itemA, itemB));
+                    var elementos1 = relacion1.Substring(1, relacion1.Length - 2).Split(',').Select(e => e.Trim()).ToArray();
+                    var elementos2 = relacion2.Substring(1, relacion2.Length - 2).Split(',').Select(e => e.Trim()).ToArray();
+
+                    productoCartesiano.Add($"({elementos1[0]}, {elementos2[1]})");
                 }
             }
 
-            return result;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            // No es necesario implementar nada aquí para esta funcionalidad
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            // Este evento se activa cuando cambia el texto en textBox1
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            // Este evento se activa cuando cambia el texto en textBox2
-        }
-
-        private void ProductoCartesiano_Load(object sender, EventArgs e)
-        {
-
+            return productoCartesiano;
         }
     }
 }

@@ -32,6 +32,8 @@
             label6 = new Label();
             menuStrip1 = new MenuStrip();
             relacionesDeRecurrenciaToolStripMenuItem = new ToolStripMenuItem();
+            ecauionesDeOrden1ToolStripMenuItem = new ToolStripMenuItem();
+            ecuacionesDeOrden2ToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -60,10 +62,25 @@
             // 
             // relacionesDeRecurrenciaToolStripMenuItem
             // 
+            relacionesDeRecurrenciaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ecauionesDeOrden1ToolStripMenuItem, ecuacionesDeOrden2ToolStripMenuItem });
             relacionesDeRecurrenciaToolStripMenuItem.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             relacionesDeRecurrenciaToolStripMenuItem.Name = "relacionesDeRecurrenciaToolStripMenuItem";
             relacionesDeRecurrenciaToolStripMenuItem.Size = new Size(230, 27);
             relacionesDeRecurrenciaToolStripMenuItem.Text = "Relaciones de Recurrencia";
+            // 
+            // ecauionesDeOrden1ToolStripMenuItem
+            // 
+            ecauionesDeOrden1ToolStripMenuItem.Name = "ecauionesDeOrden1ToolStripMenuItem";
+            ecauionesDeOrden1ToolStripMenuItem.Size = new Size(274, 28);
+            ecauionesDeOrden1ToolStripMenuItem.Text = "Ecauiones de Orden 1";
+            ecauionesDeOrden1ToolStripMenuItem.Click += ecauionesDeOrden1ToolStripMenuItem_Click;
+            // 
+            // ecuacionesDeOrden2ToolStripMenuItem
+            // 
+            ecuacionesDeOrden2ToolStripMenuItem.Name = "ecuacionesDeOrden2ToolStripMenuItem";
+            ecuacionesDeOrden2ToolStripMenuItem.Size = new Size(274, 28);
+            ecuacionesDeOrden2ToolStripMenuItem.Text = "Ecuaciones de Orden 2";
+            ecuacionesDeOrden2ToolStripMenuItem.Click += ecuacionesDeOrden2ToolStripMenuItem_Click;
             // 
             // MenuRecurrencia
             // 
@@ -88,5 +105,7 @@
         private Label label6;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem relacionesDeRecurrenciaToolStripMenuItem;
+        private ToolStripMenuItem ecauionesDeOrden1ToolStripMenuItem;
+        private ToolStripMenuItem ecuacionesDeOrden2ToolStripMenuItem;
     }
 }

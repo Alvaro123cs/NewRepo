@@ -32,6 +32,8 @@
             label6 = new Label();
             menuStrip1 = new MenuStrip();
             productoCartesianoToolStripMenuItem = new ToolStripMenuItem();
+            unionDeConjutosToolStripMenuItem = new ToolStripMenuItem();
+            interseccionDeConjutosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -51,7 +53,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { productoCartesianoToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { productoCartesianoToolStripMenuItem, unionDeConjutosToolStripMenuItem, interseccionDeConjutosToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 31);
@@ -65,6 +67,20 @@
             productoCartesianoToolStripMenuItem.Size = new Size(186, 27);
             productoCartesianoToolStripMenuItem.Text = "Producto Cartesiano";
             productoCartesianoToolStripMenuItem.Click += productoCartesianoToolStripMenuItem_Click;
+            // 
+            // unionDeConjutosToolStripMenuItem
+            // 
+            unionDeConjutosToolStripMenuItem.Name = "unionDeConjutosToolStripMenuItem";
+            unionDeConjutosToolStripMenuItem.Size = new Size(145, 27);
+            unionDeConjutosToolStripMenuItem.Text = "Union de Conjutos";
+            unionDeConjutosToolStripMenuItem.Click += unionDeConjutosToolStripMenuItem_Click;
+            // 
+            // interseccionDeConjutosToolStripMenuItem
+            // 
+            interseccionDeConjutosToolStripMenuItem.Name = "interseccionDeConjutosToolStripMenuItem";
+            interseccionDeConjutosToolStripMenuItem.Size = new Size(185, 27);
+            interseccionDeConjutosToolStripMenuItem.Text = "Interseccion de Conjutos";
+            interseccionDeConjutosToolStripMenuItem.Click += interseccionDeConjutosToolStripMenuItem_Click;
             // 
             // MenuLenguaje
             // 
@@ -89,5 +105,7 @@
         private Label label6;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem productoCartesianoToolStripMenuItem;
+        private ToolStripMenuItem unionDeConjutosToolStripMenuItem;
+        private ToolStripMenuItem interseccionDeConjutosToolStripMenuItem;
     }
 }
