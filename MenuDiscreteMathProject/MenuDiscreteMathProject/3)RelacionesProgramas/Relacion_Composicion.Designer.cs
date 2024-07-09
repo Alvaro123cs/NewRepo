@@ -39,6 +39,7 @@
             // 
             // textBox1
             // 
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
             textBox1.Location = new Point(29, 45);
             textBox1.Margin = new Padding(4, 5, 4, 5);
             textBox1.Name = "textBox1";
@@ -47,6 +48,7 @@
             // 
             // textBox2
             // 
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
             textBox2.Location = new Point(29, 119);
             textBox2.Margin = new Padding(4, 5, 4, 5);
             textBox2.Multiline = true;
@@ -57,6 +59,7 @@
             // 
             // button1
             // 
+            button1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             button1.Location = new Point(29, 300);
             button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
@@ -69,22 +72,24 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label1.Location = new Point(25, 20);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(128, 20);
+            label1.Size = new Size(157, 23);
             label1.TabIndex = 3;
-            label1.Text = "Ingrese relaciones";
+            label1.Text = "Ingrese relaciones:";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label2.Location = new Point(25, 94);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(190, 20);
+            label2.Size = new Size(228, 23);
             label2.TabIndex = 4;
-            label2.Text = "Relaciones de composición";
+            label2.Text = "Relaciones de composición:";
             // 
             // label3
             // 
@@ -108,6 +113,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(316, 406);
             Controls.Add(labelResultado);
             Controls.Add(label3);
@@ -116,6 +122,7 @@
             Controls.Add(button1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(4, 5, 4, 5);
             Name = "Relacion_Composicion";
             StartPosition = FormStartPosition.CenterScreen;

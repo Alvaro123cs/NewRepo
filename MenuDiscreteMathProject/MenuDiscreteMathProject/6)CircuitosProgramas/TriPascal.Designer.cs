@@ -34,6 +34,7 @@
             // 
             // calculateButton
             // 
+            calculateButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             calculateButton.Location = new Point(61, 146);
             calculateButton.Margin = new Padding(4, 5, 4, 5);
             calculateButton.Name = "calculateButton";
@@ -59,18 +60,22 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.FlatStyle = FlatStyle.System;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(567, 54);
             label1.Name = "label1";
-            label1.Size = new Size(75, 20);
+            label1.Size = new Size(106, 28);
             label1.TabIndex = 3;
             label1.Text = "Resultado";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(108, 54);
+            label2.FlatStyle = FlatStyle.System;
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(71, 45);
             label2.Name = "label2";
-            label2.Size = new Size(127, 20);
+            label2.Size = new Size(204, 31);
             label2.TabIndex = 4;
             label2.Text = "Ingrese valor de n";
             // 
@@ -78,12 +83,15 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(882, 470);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(resultLabel);
             Controls.Add(calculateButton);
             Controls.Add(nTextBox);
+            ForeColor = SystemColors.ActiveCaptionText;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(4, 5, 4, 5);
             Name = "TriPascal";
             StartPosition = FormStartPosition.CenterScreen;

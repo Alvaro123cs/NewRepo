@@ -430,6 +430,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlLight;
             ClientSize = new Size(466, 722);
             Controls.Add(button32);
             Controls.Add(button31);
@@ -464,10 +465,11 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(3, 4, 3, 4);
             Name = "Cal1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Calculator";
             Load += Cal1_Load;
             ResumeLayout(false);
             PerformLayout();

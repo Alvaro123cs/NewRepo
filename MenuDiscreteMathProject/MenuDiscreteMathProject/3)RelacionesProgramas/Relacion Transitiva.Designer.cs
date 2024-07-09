@@ -29,6 +29,7 @@
             // 
             // textBox1
             // 
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
             textBox1.Location = new Point(17, 56);
             textBox1.Margin = new Padding(4, 5, 4, 5);
             textBox1.Name = "textBox1";
@@ -38,6 +39,7 @@
             // 
             // button1
             // 
+            button1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             button1.Location = new Point(20, 291);
             button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
@@ -50,10 +52,11 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label1.Location = new Point(18, 30);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(131, 20);
+            label1.Size = new Size(157, 23);
             label1.TabIndex = 3;
             label1.Text = "Ingrese relaciones:";
             label1.Click += label1_Click;
@@ -70,15 +73,17 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label2.Location = new Point(18, 96);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(162, 20);
+            label2.Size = new Size(191, 23);
             label2.TabIndex = 7;
             label2.Text = "Relaciones Conjugadas";
             // 
             // textBox2
             // 
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
             textBox2.Location = new Point(17, 122);
             textBox2.Margin = new Padding(4, 5, 4, 5);
             textBox2.Multiline = true;
@@ -91,6 +96,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(390, 392);
             Controls.Add(textBox2);
             Controls.Add(label2);
@@ -98,6 +104,7 @@
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(textBox1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;

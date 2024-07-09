@@ -37,6 +37,7 @@
             // 
             // txtLetras
             // 
+            txtLetras.BorderStyle = BorderStyle.FixedSingle;
             txtLetras.Location = new Point(13, 61);
             txtLetras.Margin = new Padding(4, 5, 4, 5);
             txtLetras.Name = "txtLetras";
@@ -45,6 +46,7 @@
             // 
             // btnGenerar
             // 
+            btnGenerar.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btnGenerar.Location = new Point(260, 101);
             btnGenerar.Margin = new Padding(4, 5, 4, 5);
             btnGenerar.Name = "btnGenerar";
@@ -66,20 +68,22 @@
             // lblTotal
             // 
             lblTotal.AutoSize = true;
+            lblTotal.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lblTotal.Location = new Point(13, 362);
             lblTotal.Margin = new Padding(4, 0, 4, 0);
             lblTotal.Name = "lblTotal";
-            lblTotal.Size = new Size(180, 20);
+            lblTotal.Size = new Size(190, 20);
             lblTotal.TabIndex = 3;
             lblTotal.Text = "Total de permutaciones: 0";
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label1.Location = new Point(13, 25);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(230, 20);
+            label1.Size = new Size(242, 20);
             label1.TabIndex = 4;
             label1.Text = "Ingrese los caracteres a combinar";
             // 
@@ -87,12 +91,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(382, 409);
+            BackColor = SystemColors.GradientInactiveCaption;
+            ClientSize = new Size(382, 425);
             Controls.Add(label1);
             Controls.Add(lblTotal);
             Controls.Add(lstPermutaciones);
             Controls.Add(btnGenerar);
             Controls.Add(txtLetras);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(4, 5, 4, 5);
             Name = "Combinaciones";
             StartPosition = FormStartPosition.CenterScreen;

@@ -33,6 +33,7 @@
             // 
             // textBox1
             // 
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
             textBox1.Location = new Point(48, 25);
             textBox1.Margin = new Padding(4, 5, 4, 5);
             textBox1.Name = "textBox1";
@@ -42,7 +43,8 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(48, 59);
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
+            textBox2.Location = new Point(48, 64);
             textBox2.Margin = new Padding(4, 5, 4, 5);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
@@ -52,10 +54,11 @@
             // 
             // button1
             // 
+            button1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             button1.Location = new Point(48, 252);
             button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
-            button1.Size = new Size(100, 35);
+            button1.Size = new Size(107, 39);
             button1.TabIndex = 2;
             button1.Text = "Verificar";
             button1.UseVisualStyleBackColor = true;
@@ -74,18 +77,20 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label1.Location = new Point(12, 31);
             label1.Name = "label1";
-            label1.Size = new Size(32, 20);
+            label1.Size = new Size(34, 20);
             label1.TabIndex = 4;
             label1.Text = "X =";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label2.Location = new Point(11, 59);
             label2.Name = "label2";
-            label2.Size = new Size(32, 20);
+            label2.Size = new Size(34, 20);
             label2.TabIndex = 5;
             label2.Text = "R =";
             // 
@@ -93,17 +98,19 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(379, 401);
+            BackColor = SystemColors.GradientActiveCaption;
+            ClientSize = new Size(388, 360);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(labelResultado);
             Controls.Add(button1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Relaciones";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();

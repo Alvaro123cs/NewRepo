@@ -37,6 +37,7 @@
             // 
             // button1
             // 
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             button1.Location = new Point(195, 136);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
@@ -48,15 +49,18 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(58, 148);
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.Location = new Point(33, 148);
             textBox1.Margin = new Padding(3, 4, 3, 4);
+            textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 27);
+            textBox1.Size = new Size(125, 38);
             textBox1.TabIndex = 2;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
             // button2
             // 
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             button2.Location = new Point(195, 229);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
@@ -68,19 +72,22 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(58, 240);
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
+            textBox2.Location = new Point(35, 234);
             textBox2.Margin = new Padding(3, 4, 3, 4);
+            textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 27);
+            textBox2.Size = new Size(125, 39);
             textBox2.TabIndex = 4;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(68, 62);
+            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(33, 80);
             label1.Name = "label1";
             label1.RightToLeft = RightToLeft.No;
-            label1.Size = new Size(271, 20);
+            label1.Size = new Size(326, 23);
             label1.TabIndex = 5;
             label1.Text = "Conversion Binario/Decimal y Viceversa";
             // 
@@ -88,16 +95,18 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(384, 370);
             Controls.Add(label1);
             Controls.Add(textBox2);
             Controls.Add(button2);
             Controls.Add(textBox1);
             Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(3, 4, 3, 4);
             Name = "BinarioDecimalVicever";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Conversiones";
             ResumeLayout(false);
             PerformLayout();
         }

@@ -98,5 +98,10 @@ namespace CoheficienteBinomiales
         {
 
         }
+
+        private void resultLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

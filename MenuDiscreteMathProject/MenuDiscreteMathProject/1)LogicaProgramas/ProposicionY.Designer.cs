@@ -42,9 +42,10 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             label1.Location = new Point(33, 66);
             label1.Name = "label1";
-            label1.Size = new Size(61, 20);
+            label1.Size = new Size(80, 25);
             label1.TabIndex = 0;
             label1.Text = "valor x1";
             label1.Click += label1_Click;
@@ -52,9 +53,10 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             label2.Location = new Point(33, 141);
             label2.Name = "label2";
-            label2.Size = new Size(61, 20);
+            label2.Size = new Size(80, 25);
             label2.TabIndex = 0;
             label2.Text = "valor x2";
             label2.Click += label1_Click;
@@ -98,9 +100,10 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             label3.Location = new Point(121, 325);
             label3.Name = "label3";
-            label3.Size = new Size(53, 20);
+            label3.Size = new Size(70, 25);
             label3.TabIndex = 0;
             label3.Text = "valor y";
             label3.Click += label1_Click;
@@ -108,21 +111,23 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             label4.Location = new Point(326, 325);
             label4.Name = "label4";
-            label4.Size = new Size(55, 20);
+            label4.Size = new Size(71, 25);
             label4.TabIndex = 0;
             label4.Text = "valor o";
             label4.Click += label1_Click;
             // 
             // button1
             // 
+            button1.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             button1.Location = new Point(354, 66);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
             button1.Size = new Size(152, 161);
             button1.TabIndex = 2;
-            button1.Text = "button1";
+            button1.Text = "Push";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -130,6 +135,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlLight;
             ClientSize = new Size(571, 515);
             Controls.Add(button1);
             Controls.Add(textBox2);
@@ -140,10 +146,11 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(3, 4, 3, 4);
             Name = "ProposicionY";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Proposiciones";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();

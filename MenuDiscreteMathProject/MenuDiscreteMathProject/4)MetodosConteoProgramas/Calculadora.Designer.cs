@@ -457,6 +457,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(507, 766);
             Controls.Add(button26);
             Controls.Add(button25);
@@ -491,10 +492,11 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(3, 4, 3, 4);
             Name = "Calculadora";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Calculator";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();

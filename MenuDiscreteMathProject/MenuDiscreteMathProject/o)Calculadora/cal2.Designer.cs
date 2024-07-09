@@ -367,12 +367,12 @@
             txtResultado.BackColor = SystemColors.InactiveBorder;
             txtResultado.Font = new Font("Microsoft Sans Serif", 19.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtResultado.ForeColor = SystemColors.InactiveCaptionText;
-            txtResultado.Location = new Point(61, 15);
+            txtResultado.Location = new Point(68, 87);
             txtResultado.Margin = new Padding(3, 4, 3, 4);
             txtResultado.Multiline = true;
             txtResultado.Name = "txtResultado";
             txtResultado.ReadOnly = true;
-            txtResultado.Size = new Size(354, 134);
+            txtResultado.Size = new Size(354, 63);
             txtResultado.TabIndex = 10;
             txtResultado.Text = "0";
             txtResultado.TextAlign = HorizontalAlignment.Right;
@@ -524,6 +524,7 @@
             Controls.Add(bt9);
             Controls.Add(bt8);
             Controls.Add(bt7);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(3, 4, 3, 4);
             Name = "Calculadora";
             StartPosition = FormStartPosition.CenterScreen;

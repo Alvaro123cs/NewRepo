@@ -47,7 +47,7 @@
             // button1
             // 
             button1.FlatStyle = FlatStyle.System;
-            button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             button1.Location = new Point(430, 123);
             button1.Name = "button1";
             button1.Size = new Size(115, 44);
@@ -68,6 +68,7 @@
             // 
             // textBox1
             // 
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
             textBox1.Location = new Point(121, 119);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(125, 27);
@@ -88,15 +89,17 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(668, 431);
             Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(listBox1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Combi";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Combinaciones";
             Load += Combi_Load;
             ResumeLayout(false);
             PerformLayout();
