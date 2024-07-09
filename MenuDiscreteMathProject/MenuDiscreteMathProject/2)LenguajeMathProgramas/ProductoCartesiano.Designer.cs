@@ -103,7 +103,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "ProductoCartesiano";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Lemguaje de las Matemáticas";
+            Text = "Lenguaje de las Matemáticas";
             Load += ProductoCartesiano_Load;
             ResumeLayout(false);
             PerformLayout();
