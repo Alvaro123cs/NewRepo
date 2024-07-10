@@ -101,68 +101,76 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(99, 20);
+            label1.Size = new Size(105, 20);
             label1.TabIndex = 8;
             label1.Text = "Número de n:";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label2.Location = new Point(12, 52);
             label2.Name = "label2";
-            label2.Size = new Size(72, 20);
+            label2.Size = new Size(77, 20);
             label2.TabIndex = 9;
             label2.Text = "Coef (c1):";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label3.Location = new Point(12, 95);
             label3.Name = "label3";
-            label3.Size = new Size(72, 20);
+            label3.Size = new Size(77, 20);
             label3.TabIndex = 10;
             label3.Text = "Coef (c2):";
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label4.Location = new Point(12, 138);
             label4.Name = "label4";
-            label4.Size = new Size(21, 20);
+            label4.Size = new Size(22, 20);
             label4.TabIndex = 11;
             label4.Text = "d:";
             // 
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label5.Location = new Point(12, 181);
             label5.Name = "label5";
-            label5.Size = new Size(32, 20);
+            label5.Size = new Size(34, 20);
             label5.TabIndex = 12;
             label5.Text = "a0: ";
             // 
             // label6
             // 
             label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label6.Location = new Point(12, 224);
             label6.Name = "label6";
-            label6.Size = new Size(32, 20);
+            label6.Size = new Size(34, 20);
             label6.TabIndex = 13;
             label6.Text = "a1: ";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(138, 12);
+            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label7.Location = new Point(163, 32);
             label7.Name = "label7";
-            label7.Size = new Size(220, 60);
+            label7.Size = new Size(230, 60);
             label7.TabIndex = 14;
             label7.Text = "            IMPORTANTE!!\r\n        Introduzca los datos \r\ncomo se muestra en el ejemplo:";
             // 
             // EcuacionOrden2
             // 
+            BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(label7);
             Controls.Add(label6);
@@ -179,6 +187,7 @@
             Controls.Add(textBoxCoef2);
             Controls.Add(textBoxCoef1);
             Controls.Add(textBoxN);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "EcuacionOrden2";
             Text = "Recurrencia de Orden 2";
             ResumeLayout(false);

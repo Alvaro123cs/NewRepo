@@ -32,10 +32,10 @@
             label1 = new Label();
             pictureBox2 = new PictureBox();
             btnCerrar = new Label();
-            pictureBox1 = new PictureBox();
             label2 = new Label();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -73,18 +73,6 @@
             btnCerrar.Text = "X";
             btnCerrar.Click += btnCerrar_Click;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.Enabled = false;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(275, 298);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(337, 249);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 11;
-            pictureBox1.TabStop = false;
-            // 
             // label2
             // 
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -97,14 +85,26 @@
             label2.TextAlign = ContentAlignment.TopCenter;
             label2.Click += label2_Click_1;
             // 
+            // pictureBox3
+            // 
+            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox3.Enabled = false;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(273, 288);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(354, 259);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 13;
+            pictureBox3.TabStop = false;
+            // 
             // FormBienvenida
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
             ClientSize = new Size(852, 559);
+            Controls.Add(pictureBox3);
             Controls.Add(label2);
-            Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
             Controls.Add(btnCerrar);
             Controls.Add(label1);
@@ -113,7 +113,7 @@
             Text = "Form3";
             Load += FormBienvenida_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -123,7 +123,7 @@
         private Label label1;
         private PictureBox pictureBox2;
         private Label btnCerrar;
-        private PictureBox pictureBox1;
         private Label label2;
+        private PictureBox pictureBox3;
     }
 }

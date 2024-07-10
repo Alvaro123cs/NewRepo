@@ -125,7 +125,7 @@
             // 
             // MenuVertical
             // 
-            MenuVertical.BackColor = Color.LightBlue;
+            MenuVertical.BackColor = Color.PowderBlue;
             MenuVertical.Controls.Add(pictureBox5);
             MenuVertical.Controls.Add(btnPag);
             MenuVertical.Controls.Add(pictureBox4);

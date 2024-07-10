@@ -71,15 +71,15 @@
             // ecauionesDeOrden1ToolStripMenuItem
             // 
             ecauionesDeOrden1ToolStripMenuItem.Name = "ecauionesDeOrden1ToolStripMenuItem";
-            ecauionesDeOrden1ToolStripMenuItem.Size = new Size(274, 28);
-            ecauionesDeOrden1ToolStripMenuItem.Text = "Ecauiones de Orden 1";
+            ecauionesDeOrden1ToolStripMenuItem.Size = new Size(286, 28);
+            ecauionesDeOrden1ToolStripMenuItem.Text = "Ecuaciones de Orden (1)";
             ecauionesDeOrden1ToolStripMenuItem.Click += ecauionesDeOrden1ToolStripMenuItem_Click;
             // 
             // ecuacionesDeOrden2ToolStripMenuItem
             // 
             ecuacionesDeOrden2ToolStripMenuItem.Name = "ecuacionesDeOrden2ToolStripMenuItem";
-            ecuacionesDeOrden2ToolStripMenuItem.Size = new Size(274, 28);
-            ecuacionesDeOrden2ToolStripMenuItem.Text = "Ecuaciones de Orden 2";
+            ecuacionesDeOrden2ToolStripMenuItem.Size = new Size(286, 28);
+            ecuacionesDeOrden2ToolStripMenuItem.Text = "Ecuaciones de Orden (2)";
             ecuacionesDeOrden2ToolStripMenuItem.Click += ecuacionesDeOrden2ToolStripMenuItem_Click;
             // 
             // MenuRecurrencia

@@ -56,32 +56,36 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(95, 20);
+            label1.Size = new Size(100, 20);
             label1.TabIndex = 3;
             label1.Text = "Relaciones 1:";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label2.Location = new Point(12, 85);
             label2.Name = "label2";
-            label2.Size = new Size(95, 20);
+            label2.Size = new Size(100, 20);
             label2.TabIndex = 4;
             label2.Text = "Relaciones 2:";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label3.Location = new Point(12, 157);
             label3.Name = "label3";
-            label3.Size = new Size(146, 20);
+            label3.Size = new Size(155, 20);
             label3.TabIndex = 5;
             label3.Text = "Producto Cartesiano:";
             // 
             // button1
             // 
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             button1.Location = new Point(21, 253);
             button1.Name = "button1";
             button1.Size = new Size(240, 34);
@@ -93,14 +97,16 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label4.Location = new Point(32, 303);
             label4.Name = "label4";
-            label4.Size = new Size(220, 60);
+            label4.Size = new Size(230, 60);
             label4.TabIndex = 8;
             label4.Text = "            IMPORTANTE!!\r\n        Introduzca relaciones \r\ncomo se muestra en el ejemplo:";
             // 
             // ProductoCartesiano
             // 
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(284, 392);
             Controls.Add(label4);
             Controls.Add(button1);
@@ -110,7 +116,10 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
+            Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "ProductoCartesiano";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Producto Cartesiano de Relaciones";
             ResumeLayout(false);
             PerformLayout();

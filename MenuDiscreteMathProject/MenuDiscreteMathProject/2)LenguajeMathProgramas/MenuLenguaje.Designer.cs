@@ -70,15 +70,17 @@
             // 
             // unionDeConjutosToolStripMenuItem
             // 
+            unionDeConjutosToolStripMenuItem.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             unionDeConjutosToolStripMenuItem.Name = "unionDeConjutosToolStripMenuItem";
-            unionDeConjutosToolStripMenuItem.Size = new Size(145, 27);
+            unionDeConjutosToolStripMenuItem.Size = new Size(171, 27);
             unionDeConjutosToolStripMenuItem.Text = "Union de Conjutos";
             unionDeConjutosToolStripMenuItem.Click += unionDeConjutosToolStripMenuItem_Click;
             // 
             // interseccionDeConjutosToolStripMenuItem
             // 
+            interseccionDeConjutosToolStripMenuItem.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             interseccionDeConjutosToolStripMenuItem.Name = "interseccionDeConjutosToolStripMenuItem";
-            interseccionDeConjutosToolStripMenuItem.Size = new Size(185, 27);
+            interseccionDeConjutosToolStripMenuItem.Size = new Size(219, 27);
             interseccionDeConjutosToolStripMenuItem.Text = "Interseccion de Conjutos";
             interseccionDeConjutosToolStripMenuItem.Click += interseccionDeConjutosToolStripMenuItem_Click;
             // 
