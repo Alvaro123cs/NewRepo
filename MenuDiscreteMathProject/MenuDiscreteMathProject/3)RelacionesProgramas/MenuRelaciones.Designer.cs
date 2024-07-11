@@ -38,6 +38,7 @@
             relacionSimetricaToolStripMenuItem = new ToolStripMenuItem();
             relacionTransitivaToolStripMenuItem = new ToolStripMenuItem();
             relacionComposiciónToolStripMenuItem = new ToolStripMenuItem();
+            matricesDeRelacionesToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -57,7 +58,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { relacionesToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { relacionesToolStripMenuItem, matricesDeRelacionesToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 31);
@@ -120,6 +121,14 @@
             relacionComposiciónToolStripMenuItem.Text = "Relacion Composición";
             relacionComposiciónToolStripMenuItem.Click += relacionComposiciónToolStripMenuItem_Click;
             // 
+            // matricesDeRelacionesToolStripMenuItem
+            // 
+            matricesDeRelacionesToolStripMenuItem.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            matricesDeRelacionesToolStripMenuItem.Name = "matricesDeRelacionesToolStripMenuItem";
+            matricesDeRelacionesToolStripMenuItem.Size = new Size(182, 27);
+            matricesDeRelacionesToolStripMenuItem.Text = "Matrices de Relaciones";
+            matricesDeRelacionesToolStripMenuItem.Click += matricesDeRelacionesToolStripMenuItem_Click;
+            // 
             // MenuRelaciones
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -151,5 +160,6 @@
         private ToolStripMenuItem relacionSimetricaToolStripMenuItem;
         private ToolStripMenuItem relacionTransitivaToolStripMenuItem;
         private ToolStripMenuItem relacionComposiciónToolStripMenuItem;
+        private ToolStripMenuItem matricesDeRelacionesToolStripMenuItem;
     }
 }

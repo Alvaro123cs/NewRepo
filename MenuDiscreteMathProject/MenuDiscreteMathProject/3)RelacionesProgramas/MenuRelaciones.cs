@@ -66,5 +66,12 @@ namespace MenuDiscreteMathProject._3_RelacionesProgramas
             formComposicion.Show();
 
         }
+
+        private void matricesDeRelacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MatricesDeRelaciones.MatricesDeRelaciones formMatrices = new MatricesDeRelaciones.MatricesDeRelaciones();
+            formMatrices.StartPosition = FormStartPosition.CenterScreen; // Centra el formulario en la pantalla
+            formMatrices.Show();
+        }
     }
 }
