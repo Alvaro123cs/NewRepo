@@ -25,12 +25,13 @@
             labelResultado = new Label();
             label2 = new Label();
             textBox2 = new TextBox();
+            label4 = new Label();
             SuspendLayout();
             // 
             // textBox1
             // 
             textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Location = new Point(17, 56);
+            textBox1.Location = new Point(18, 106);
             textBox1.Margin = new Padding(4, 5, 4, 5);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(345, 27);
@@ -40,7 +41,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button1.Location = new Point(20, 291);
+            button1.Location = new Point(18, 395);
             button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
             button1.Size = new Size(339, 35);
@@ -53,7 +54,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label1.Location = new Point(18, 30);
+            label1.Location = new Point(18, 78);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(157, 23);
@@ -74,7 +75,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label2.Location = new Point(18, 96);
+            label2.Location = new Point(21, 138);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(191, 23);
@@ -84,7 +85,7 @@
             // textBox2
             // 
             textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(17, 122);
+            textBox2.Location = new Point(21, 166);
             textBox2.Margin = new Padding(4, 5, 4, 5);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
@@ -92,12 +93,22 @@
             textBox2.Size = new Size(338, 152);
             textBox2.TabIndex = 8;
             // 
+            // label4
+            // 
+            label4.Font = new Font("Segoe UI", 9F);
+            label4.Location = new Point(78, 16);
+            label4.Name = "label4";
+            label4.Size = new Size(233, 62);
+            label4.TabIndex = 14;
+            label4.Text = "            IMPORTANTE!!\r\n        Introduzca relaciones \r\ncomo se muestra en el ejemplo:";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(390, 392);
+            ClientSize = new Size(390, 444);
+            Controls.Add(label4);
             Controls.Add(textBox2);
             Controls.Add(label2);
             Controls.Add(labelResultado);
@@ -116,5 +127,6 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
+        private Label label4;
     }
 }

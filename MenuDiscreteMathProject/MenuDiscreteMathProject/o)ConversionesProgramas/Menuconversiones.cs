@@ -26,5 +26,20 @@ namespace MenuDiscreteMathProject.o_ConversionesProgramas
         {
 
         }
+
+        private void binarioToDecimalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Instanciar y mostrar el formulario BinarioDecimalVicever
+            WindowsFormsApplication5.BinarioDecimalVicever binarioDecimalForm = new WindowsFormsApplication5.BinarioDecimalVicever();
+            binarioDecimalForm.Show();
+        }
+
+        private void decimalToBinarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            // Instanciar y mostrar el formulario DecimaltoBinario
+            decimaltobinary.DecimaltoBinario decimalBinarioForm = new decimaltobinary.DecimaltoBinario();
+            decimalBinarioForm.Show();
+        }
     }
 }

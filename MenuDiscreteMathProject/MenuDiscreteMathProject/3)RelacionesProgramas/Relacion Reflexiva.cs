@@ -12,8 +12,10 @@ namespace Relaciones
 {
     public partial class Form1 : Form
     {
+       
         public Form1()
         {
+
             InitializeComponent();
         }
 
@@ -42,14 +44,17 @@ namespace Relaciones
 
         }
 
+      
+
         private void button1_Click(object sender, EventArgs e)
         {
             var conjunto = ObtenerConjunto();
             var relaciones = GenerarRelaciones(conjunto);
             MostrarRelaciones(relaciones);
             bool esReflexiva = EsReflexiva(conjunto, relaciones);
-            labelResultado.Text = "La relación es reflexiva: {esReflexiva}";
+            labelResultado.Text = "La relación es reflexiva: " + esReflexiva.ToString(); // Corregido aquí
         }
+
 
         private HashSet<string> ObtenerConjunto()
         {
@@ -79,13 +84,28 @@ namespace Relaciones
         {
             foreach (var elemento in conjunto)
             {
-                if (!relaciones.Contains(new Tuple<string, string>(elemento, elemento)))
+                bool encontrada = false;
+                foreach (var relacion in relaciones)
                 {
-                    return false;
+                    if (relacion.Item1 == elemento && relacion.Item2 == elemento)
+                    {
+                        encontrada = true;
+                        break;  // Encontramos la pareja (elemento, elemento), no es necesario seguir buscando
+                    }
+                }
+
+                if (!encontrada)
+                {
+                    return false;  // Si no encontramos la pareja (elemento, elemento), la relación no es reflexiva
                 }
             }
+
+            // Después de revisar todas las parejas (elemento, elemento), si todas están presentes exactamente una vez, la relación es reflexiva
             return true;
         }
+
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {

@@ -189,6 +189,7 @@
             Controls.Add(textBoxN);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "EcuacionOrden2";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Recurrencia de Orden 2";
             ResumeLayout(false);
             PerformLayout();

@@ -23,6 +23,7 @@
             label1 = new Label();
             label2 = new Label();
             textBox1 = new TextBox();
+            label4 = new Label();
             SuspendLayout();
             // 
             // labelResultado
@@ -61,7 +62,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label1.Location = new Point(25, 35);
+            label1.Location = new Point(29, 96);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(135, 20);
@@ -82,11 +83,20 @@
             // textBox1
             // 
             textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Location = new Point(29, 60);
+            textBox1.Location = new Point(25, 120);
             textBox1.Margin = new Padding(4, 5, 4, 5);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(265, 27);
             textBox1.TabIndex = 0;
+            // 
+            // label4
+            // 
+            label4.Font = new Font("Segoe UI", 9F);
+            label4.Location = new Point(50, 24);
+            label4.Name = "label4";
+            label4.Size = new Size(233, 62);
+            label4.TabIndex = 14;
+            label4.Text = "            IMPORTANTE!!\r\n        Introduzca relaciones \r\ncomo se muestra en el ejemplo:";
             // 
             // Form1
             // 
@@ -94,6 +104,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(330, 451);
+            Controls.Add(label4);
             Controls.Add(labelResultado);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -118,7 +129,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
-
-
+        private Label label4;
     }
 }

@@ -30,7 +30,7 @@ namespace WindowsFormsApplication5
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-        
+
 
         private double BinaryToReal(string binary)
         {
@@ -61,7 +61,7 @@ namespace WindowsFormsApplication5
         }
 
 
-   
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -74,7 +74,7 @@ namespace WindowsFormsApplication5
             {
                 string binaryNumber = textBox1.Text;
                 int decimalNumber = BinaryToDecimal(binaryNumber);
-                textBox2.Text = decimalNumber.ToString(); 
+                textBox2.Text = decimalNumber.ToString();
             }
             catch (Exception ex)
             {
@@ -86,21 +86,25 @@ namespace WindowsFormsApplication5
         {
             int decimalNumber = 0;
 
-      
+
             for (int i = binary.Length - 1; i >= 0; i--)
             {
-              
+
                 int digit = int.Parse(binary[i].ToString());
 
-               
+
                 decimalNumber += digit * (int)Math.Pow(2, binary.Length - 1 - i);
             }
 
             return decimalNumber;
         }
 
-        }
+        private void BinarioDecimalVicever_Load(object sender, EventArgs e)
+        {
 
-       
+        }
     }
+
+
+}
 

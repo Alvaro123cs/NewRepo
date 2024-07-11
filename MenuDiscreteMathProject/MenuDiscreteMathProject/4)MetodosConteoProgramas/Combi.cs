@@ -31,11 +31,21 @@ namespace Combinatoria
             combinaciones.Clear(); // Limpiamos la lista de combinaciones generadas anteriormente
 
             // Obtener la longitud deseada desde el textBox
-            if (!int.TryParse(textBox1.Text, out int longitud) || longitud <= 0)
+            if (!int.TryParse(textBox1.Text, out int longitud) || longitud <= 0 || longitud >= 6)
             {
-                MessageBox.Show("Por favor, ingrese un número válido para la longitud de las combinaciones.");
+                MessageBox.Show("Por favor, ingrese un número válido (mayor que 0 y menor que 6) para la longitud de las combinaciones.");
                 return;
             }
+
+            // Generar las combinaciones
+            GenerarCombinaciones(longitud, "");
+
+            // Mostrar las combinaciones en el listBox
+            foreach (var combinacion in combinaciones)
+            {
+                listBox1.Items.Add(combinacion);
+            }
+
 
             // Generar las combinaciones
             GenerarCombinaciones(longitud, "");

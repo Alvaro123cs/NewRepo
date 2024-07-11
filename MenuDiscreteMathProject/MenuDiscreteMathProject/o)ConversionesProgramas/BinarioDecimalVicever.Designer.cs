@@ -107,6 +107,7 @@
             Name = "BinarioDecimalVicever";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Conversiones";
+            Load += BinarioDecimalVicever_Load;
             ResumeLayout(false);
             PerformLayout();
         }

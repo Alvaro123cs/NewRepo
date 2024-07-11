@@ -35,6 +35,7 @@
             label2 = new Label();
             label3 = new Label();
             labelResultado = new Label();
+            label4 = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -45,6 +46,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(265, 27);
             textBox1.TabIndex = 0;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
@@ -109,12 +111,22 @@
             labelResultado.TabIndex = 6;
             labelResultado.Click += labelResultado_Click;
             // 
+            // label4
+            // 
+            label4.Font = new Font("Segoe UI", 9F);
+            label4.Location = new Point(52, 403);
+            label4.Name = "label4";
+            label4.Size = new Size(233, 62);
+            label4.TabIndex = 15;
+            label4.Text = "            IMPORTANTE!!\r\n        Introduzca relaciones \r\ncomo se muestra en el ejemplo:";
+            // 
             // Relacion_Composicion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(316, 406);
+            ClientSize = new Size(316, 478);
+            Controls.Add(label4);
             Controls.Add(labelResultado);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -141,5 +153,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelResultado;
+        private Label label4;
     }
 }

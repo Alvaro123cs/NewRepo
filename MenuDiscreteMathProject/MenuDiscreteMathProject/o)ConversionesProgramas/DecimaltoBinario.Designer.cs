@@ -105,6 +105,7 @@
             Name = "DecimaltoBinario";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Conversiones";
+            Load += DecimaltoBinario_Load;
             ResumeLayout(false);
             PerformLayout();
         }

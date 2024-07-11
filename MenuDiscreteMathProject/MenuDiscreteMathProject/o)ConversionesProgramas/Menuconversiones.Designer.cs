@@ -74,6 +74,7 @@
             binarioToDecimalToolStripMenuItem.Name = "binarioToDecimalToolStripMenuItem";
             binarioToDecimalToolStripMenuItem.Size = new Size(234, 28);
             binarioToDecimalToolStripMenuItem.Text = "BinarioToDecimal";
+            binarioToDecimalToolStripMenuItem.Click += binarioToDecimalToolStripMenuItem_Click;
             // 
             // decimalToBinarioToolStripMenuItem
             // 
@@ -81,6 +82,7 @@
             decimalToBinarioToolStripMenuItem.Name = "decimalToBinarioToolStripMenuItem";
             decimalToBinarioToolStripMenuItem.Size = new Size(234, 28);
             decimalToBinarioToolStripMenuItem.Text = "DecimalToBinario";
+            decimalToBinarioToolStripMenuItem.Click += decimalToBinarioToolStripMenuItem_Click;
             // 
             // Menuconversiones
             // 

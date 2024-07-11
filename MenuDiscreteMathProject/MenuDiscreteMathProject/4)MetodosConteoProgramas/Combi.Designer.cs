@@ -33,6 +33,7 @@
             label1 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // listBox1
@@ -81,9 +82,18 @@
             label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(112, 76);
             label2.Name = "label2";
-            label2.Size = new Size(201, 25);
+            label2.Size = new Size(297, 25);
             label2.TabIndex = 4;
-            label2.Text = "Ingrese una cantidad: ";
+            label2.Text = "Ingrese una cantidad (entre 1-5): ";
+            // 
+            // label3
+            // 
+            label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(112, 21);
+            label3.Name = "label3";
+            label3.Size = new Size(276, 55);
+            label3.TabIndex = 5;
+            label3.Text = "Se realiza todas las combinaciones posibles de las letras (abcde) ";
             // 
             // Combi
             // 
@@ -91,6 +101,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(668, 431);
+            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(label1);
@@ -112,5 +123,6 @@
         private Label label1;
         private TextBox textBox1;
         private Label label2;
+        private Label label3;
     }
 }

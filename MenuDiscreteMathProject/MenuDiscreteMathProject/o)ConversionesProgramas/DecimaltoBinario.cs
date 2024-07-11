@@ -42,5 +42,10 @@ namespace decimaltobinary
         {
 
         }
+
+        private void DecimaltoBinario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
