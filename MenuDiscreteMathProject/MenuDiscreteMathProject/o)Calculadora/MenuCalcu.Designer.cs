@@ -32,7 +32,6 @@
             label6 = new Label();
             menuStrip1 = new MenuStrip();
             calculadora1ToolStripMenuItem = new ToolStripMenuItem();
-            calculadora2ToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -52,7 +51,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { calculadora1ToolStripMenuItem, calculadora2ToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { calculadora1ToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 31);
@@ -66,14 +65,6 @@
             calculadora1ToolStripMenuItem.Size = new Size(145, 27);
             calculadora1ToolStripMenuItem.Text = "Calculadora (1)";
             calculadora1ToolStripMenuItem.Click += calculadora1ToolStripMenuItem_Click;
-            // 
-            // calculadora2ToolStripMenuItem
-            // 
-            calculadora2ToolStripMenuItem.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            calculadora2ToolStripMenuItem.Name = "calculadora2ToolStripMenuItem";
-            calculadora2ToolStripMenuItem.Size = new Size(145, 27);
-            calculadora2ToolStripMenuItem.Text = "Calculadora (2)";
-            calculadora2ToolStripMenuItem.Click += calculadora2ToolStripMenuItem_Click;
             // 
             // MenuCalcu
             // 
@@ -98,6 +89,5 @@
         private Label label6;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem calculadora1ToolStripMenuItem;
-        private ToolStripMenuItem calculadora2ToolStripMenuItem;
     }
 }
