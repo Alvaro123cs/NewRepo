@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms; 
-using CAlculadora;
+
 
 namespace MenuDiscreteMathProject.o_Calculadora
 {
@@ -30,10 +30,6 @@ namespace MenuDiscreteMathProject.o_Calculadora
             calc1.Show();
         }
 
-        private void calculadora2ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Calculadora calc2 = new Calculadora();
-            calc2.Show();
-        }
+       
     }
 }
