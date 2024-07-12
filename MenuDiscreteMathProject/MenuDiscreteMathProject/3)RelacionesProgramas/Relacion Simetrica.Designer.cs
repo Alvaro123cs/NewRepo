@@ -88,6 +88,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(265, 27);
             textBox1.TabIndex = 0;
+            textBox1.Text = "(a, b); (b, a); (c, d); (d, c)";
             // 
             // label4
             // 

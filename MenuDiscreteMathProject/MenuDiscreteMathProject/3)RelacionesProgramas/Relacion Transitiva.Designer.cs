@@ -7,6 +7,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelResultado;
+        private System.Windows.Forms.Label label2; // Asegúrate de que esté aquí una sola vez
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label4; // Asegúrate de que esté aquí una sola vez
 
         protected override void Dispose(bool disposing)
         {
@@ -36,11 +39,11 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(345, 27);
             textBox1.TabIndex = 0;
-            textBox1.TextChanged += textBox1_TextChanged;
+            textBox1.Text = "(a, b); (b, c); (a, c)";
             // 
             // button1
             // 
-            button1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold | FontStyle.Italic);
             button1.Location = new Point(18, 395);
             button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
@@ -60,7 +63,6 @@
             label1.Size = new Size(157, 23);
             label1.TabIndex = 3;
             label1.Text = "Ingrese relaciones:";
-            label1.Click += label1_Click;
             // 
             // labelResultado
             // 
@@ -96,11 +98,11 @@
             // label4
             // 
             label4.Font = new Font("Segoe UI", 9F);
-            label4.Location = new Point(78, 16);
+            label4.Location = new Point(21, 16);
             label4.Name = "label4";
             label4.Size = new Size(233, 62);
             label4.TabIndex = 14;
-            label4.Text = "            IMPORTANTE!!\r\n        Introduzca relaciones \r\ncomo se muestra en el ejemplo:";
+            label4.Text = "IMPORTANTE!! Introduzca relaciones como se muestra en el ejemplo:";
             // 
             // Form1
             // 
@@ -124,9 +126,5 @@
             ResumeLayout(false);
             PerformLayout();
         }
-
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private Label label4;
     }
 }

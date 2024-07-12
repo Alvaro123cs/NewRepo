@@ -19,6 +19,10 @@ namespace Relaciones
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -44,31 +48,30 @@ namespace Relaciones
 
         }
 
-      
-
         private void button1_Click(object sender, EventArgs e)
         {
             var conjunto = ObtenerConjunto();
-            var relaciones = GenerarRelaciones(conjunto);
+            var relaciones = ObtenerRelaciones();
             MostrarRelaciones(relaciones);
             bool esReflexiva = EsReflexiva(conjunto, relaciones);
-            labelResultado.Text = "La relación es reflexiva: " + esReflexiva.ToString(); // Corregido aquí
+            labelResultado.Text = "La relación es reflexiva: " + esReflexiva.ToString();
         }
-
 
         private HashSet<string> ObtenerConjunto()
         {
-            return new HashSet<string>(textBox1.Text.Split(',').Select<string, string>(x => x.Trim()));
+            return new HashSet<string>(textBox1.Text.Split(',').Select(x => x.Trim()));
         }
 
-        private List<Tuple<string, string>> GenerarRelaciones(HashSet<string> conjunto)
+        private List<Tuple<string, string>> ObtenerRelaciones()
         {
             var relaciones = new List<Tuple<string, string>>();
-            foreach (var a in conjunto)
+            var relacionesInput = textBox3.Text.Split(';').Select(r => r.Trim()).ToList();
+            foreach (var relacion in relacionesInput)
             {
-                foreach (var b in conjunto)
+                var elementos = relacion.Split(',');
+                if (elementos.Length == 2)
                 {
-                    relaciones.Add(new Tuple<string, string>(a, b));
+                    relaciones.Add(new Tuple<string, string>(elementos[0].Trim(), elementos[1].Trim()));
                 }
             }
             return relaciones;
@@ -76,40 +79,20 @@ namespace Relaciones
 
         private void MostrarRelaciones(List<Tuple<string, string>> relaciones)
         {
-            textBox2.Text = string.Join("; ", relaciones.Select(r => string.Format("({0}, {1})", r.Item1, r.Item2)));
+            textBox2.Text = string.Join("; ", relaciones.Select(r => $"({r.Item1}, {r.Item2})"));
         }
-
 
         private bool EsReflexiva(HashSet<string> conjunto, List<Tuple<string, string>> relaciones)
         {
             foreach (var elemento in conjunto)
             {
-                bool encontrada = false;
-                foreach (var relacion in relaciones)
-                {
-                    if (relacion.Item1 == elemento && relacion.Item2 == elemento)
-                    {
-                        encontrada = true;
-                        break;  // Encontramos la pareja (elemento, elemento), no es necesario seguir buscando
-                    }
-                }
-
+                bool encontrada = relaciones.Any(relacion => relacion.Item1 == elemento && relacion.Item2 == elemento);
                 if (!encontrada)
                 {
-                    return false;  // Si no encontramos la pareja (elemento, elemento), la relación no es reflexiva
+                    return false;
                 }
             }
-
-            // Después de revisar todas las parejas (elemento, elemento), si todas están presentes exactamente una vez, la relación es reflexiva
             return true;
-        }
-
-
-
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

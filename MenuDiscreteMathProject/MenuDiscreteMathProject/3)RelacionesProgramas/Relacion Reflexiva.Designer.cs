@@ -3,12 +3,14 @@
     partial class Form1
     {
         private System.ComponentModel.IContainer components = null;
-
-        // Añade estos controles
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labelResultado;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox3;
 
         protected override void Dispose(bool disposing)
         {
@@ -30,6 +32,7 @@
             label1 = new Label();
             label2 = new Label();
             label4 = new Label();
+            textBox3 = new TextBox();
             SuspendLayout();
             // 
             // textBox1
@@ -46,7 +49,7 @@
             // textBox2
             // 
             textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(48, 104);
+            textBox2.Location = new Point(48, 147);
             textBox2.Margin = new Padding(4, 5, 4, 5);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
@@ -56,8 +59,8 @@
             // 
             // button1
             // 
-            button1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button1.Location = new Point(48, 272);
+            button1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold | FontStyle.Italic);
+            button1.Location = new Point(48, 320);
             button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
             button1.Size = new Size(107, 39);
@@ -105,12 +108,23 @@
             label4.TabIndex = 13;
             label4.Text = "            IMPORTANTE!!\r\n        Introduzca relaciones \r\ncomo se muestra en el ejemplo:";
             // 
+            // textBox3
+            // 
+            textBox3.BorderStyle = BorderStyle.FixedSingle;
+            textBox3.Location = new Point(48, 110);
+            textBox3.Margin = new Padding(4, 5, 4, 5);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(169, 27);
+            textBox3.TabIndex = 14;
+            textBox3.Text = "a,a; b,b; c,c";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(388, 360);
+            Controls.Add(textBox3);
             Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -129,9 +143,5 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private Label label4;
     }
 }
