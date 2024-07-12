@@ -50,6 +50,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(228, 46);
             textBox1.TabIndex = 0;
+            textBox1.Text = "(1,2) (2,3) (3,4) (4,1)  example";
             textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
@@ -60,6 +61,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(228, 46);
             textBox2.TabIndex = 1;
+            textBox2.Text = "(1,1) (2,2) (3,3) (4,4) example";
             textBox2.TextChanged += textBox2_TextChanged;
             // 
             // relacion1
