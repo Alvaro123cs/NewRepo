@@ -15,6 +15,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EcuacionOrden1));
             textBoxN = new TextBox();
             textBoxCoef = new TextBox();
             textBoxD = new TextBox();
@@ -27,6 +28,9 @@
             label4 = new Label();
             label5 = new Label();
             label7 = new Label();
+            pictureBox1 = new PictureBox();
+            label6 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // textBoxN
@@ -139,10 +143,31 @@
             label7.TabIndex = 15;
             label7.Text = "            IMPORTANTE!!\r\n        Introduzca los datos \r\ncomo se muestra en el ejemplo:";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(188, 158);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(188, 30);
+            pictureBox1.TabIndex = 16;
+            pictureBox1.TabStop = false;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label6.Location = new Point(237, 132);
+            label6.Name = "label6";
+            label6.Size = new Size(79, 20);
+            label6.TabIndex = 17;
+            label6.Text = "   Formula";
+            // 
             // EcuacionOrden1
             // 
             BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(label6);
+            Controls.Add(pictureBox1);
             Controls.Add(label7);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -159,6 +184,7 @@
             Name = "EcuacionOrden1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Recurrencia de Orden 1";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -175,5 +201,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private Label label7;
+        private PictureBox pictureBox1;
+        private Label label6;
     }
 }

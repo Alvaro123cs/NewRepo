@@ -15,6 +15,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Union));
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -23,6 +24,8 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // textBox1
@@ -32,7 +35,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(260, 60);
             textBox1.TabIndex = 0;
-            textBox1.Text = "(a, b); (c, d); (e, f)";
+            textBox1.Text = "(1, 2, 3, 4, 5, 6, 7)";
             // 
             // textBox2
             // 
@@ -41,7 +44,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(260, 60);
             textBox2.TabIndex = 1;
-            textBox2.Text = "(g, h); (c, d); (i, j)";
+            textBox2.Text = "(2, 4, b, 8, 10)";
             // 
             // textBox3
             // 
@@ -102,10 +105,20 @@
             label4.TabIndex = 8;
             label4.Text = "            IMPORTANTE!!\r\n        Introduzca relaciones \r\ncomo se muestra en el ejemplo:";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(318, 116);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(257, 144);
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            // 
             // Union
             // 
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(284, 427);
+            ClientSize = new Size(636, 427);
+            Controls.Add(pictureBox1);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -118,6 +131,7 @@
             Name = "Union";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Unión de Relaciones";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -130,5 +144,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private Label label4;
+        private PictureBox pictureBox1;
     }
 }

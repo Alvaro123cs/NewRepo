@@ -18,9 +18,12 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CoeBinobiales));
             nTextBox = new TextBox();
             calculateButton = new Button();
             resultLabel = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // nTextBox
@@ -48,7 +51,7 @@
             // 
             resultLabel.AutoSize = true;
             resultLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            resultLabel.Location = new Point(13, 110);
+            resultLabel.Location = new Point(39, 112);
             resultLabel.Margin = new Padding(4, 0, 4, 0);
             resultLabel.MaximumSize = new Size(533, 0);
             resultLabel.Name = "resultLabel";
@@ -57,12 +60,22 @@
             resultLabel.Text = "Resultado:";
             resultLabel.Click += resultLabel_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(296, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(325, 187);
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            // 
             // CoeBinobiales
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(217, 220);
+            ClientSize = new Size(645, 220);
+            Controls.Add(pictureBox1);
             Controls.Add(resultLabel);
             Controls.Add(calculateButton);
             Controls.Add(nTextBox);
@@ -72,8 +85,11 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Coeficiente Binomial";
             Load += CoeBinobiales_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
+
+        private PictureBox pictureBox1;
     }
 }

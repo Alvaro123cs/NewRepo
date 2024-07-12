@@ -15,6 +15,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductoCartesiano));
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -23,6 +24,8 @@
             label3 = new Label();
             button1 = new Button();
             label4 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // textBox1
@@ -32,7 +35,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(260, 50);
             textBox1.TabIndex = 0;
-            textBox1.Text = "(x, y); (z, w)";
+            textBox1.Text = "(1,x)";
             // 
             // textBox2
             // 
@@ -41,7 +44,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(260, 50);
             textBox2.TabIndex = 1;
-            textBox2.Text = "(m, n); (o, p)";
+            textBox2.Text = "(x, y, z)";
             // 
             // textBox3
             // 
@@ -104,10 +107,21 @@
             label4.TabIndex = 8;
             label4.Text = "            IMPORTANTE!!\r\n        Introduzca relaciones \r\ncomo se muestra en el ejemplo:";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(321, 73);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(222, 214);
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // ProductoCartesiano
             // 
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(284, 392);
+            ClientSize = new Size(622, 392);
+            Controls.Add(pictureBox1);
             Controls.Add(label4);
             Controls.Add(button1);
             Controls.Add(label3);
@@ -121,6 +135,7 @@
             Name = "ProductoCartesiano";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Producto Cartesiano de Relaciones";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -133,6 +148,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private Label label4;
+        private PictureBox pictureBox1;
     }
 }
 

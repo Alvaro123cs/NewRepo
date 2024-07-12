@@ -19,30 +19,36 @@ namespace MenuDiscreteMathProject._2_LenguajeMathProgramas
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            // Leer las relaciones de los TextBox
-            var relaciones1 = textBox1.Text.Split(';')
-                                           .Select(relacion => relacion.Trim())
-                                           .ToArray();
-            var relaciones2 = textBox2.Text.Split(';')
-                                           .Select(relacion => relacion.Trim())
-                                           .ToArray();
+            // Leer los conjuntos de los TextBox
+            var conjunto1 = ParseConjunto(textBox1.Text);
+            var conjunto2 = ParseConjunto(textBox2.Text);
 
             // Obtener la intersección
-            var interseccion = ObtenerInterseccion(relaciones1, relaciones2);
+            var interseccion = ObtenerInterseccion(conjunto1, conjunto2);
 
             // Mostrar el resultado en textBox3
-            textBox3.Text = interseccion.Any() ? string.Join("; ", interseccion) : "No hay intersección";
+            textBox3.Text = interseccion.Any() ? string.Join(", ", interseccion) : "No hay intersección";
         }
 
-        private List<string> ObtenerInterseccion(string[] relaciones1, string[] relaciones2)
+        private List<string> ParseConjunto(string conjunto)
         {
-            HashSet<string> conjuntoRelaciones1 = new HashSet<string>(relaciones1);
-            HashSet<string> conjuntoRelaciones2 = new HashSet<string>(relaciones2);
+            // Eliminar los paréntesis y dividir por comas
+            return conjunto.Trim('(', ')')
+                           .Split(',')
+                           .Select(elemento => elemento.Trim())
+                           .ToList();
+        }
+
+        private List<string> ObtenerInterseccion(List<string> conjunto1, List<string> conjunto2)
+        {
+            // Crear conjuntos HashSet para realizar la intersección
+            HashSet<string> set1 = new HashSet<string>(conjunto1);
+            HashSet<string> set2 = new HashSet<string>(conjunto2);
 
             // Obtener la intersección
-            conjuntoRelaciones1.IntersectWith(conjuntoRelaciones2);
+            set1.IntersectWith(set2);
 
-            return conjuntoRelaciones1.ToList();
+            return set1.ToList();
         }
     }
 }

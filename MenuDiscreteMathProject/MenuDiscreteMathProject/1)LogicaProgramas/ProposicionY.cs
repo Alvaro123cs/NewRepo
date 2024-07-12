@@ -17,28 +17,6 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
-        int proposiciony (int x1, int x2)
-        {
-            if ((x1 == 1) &&  (x2 == 1))
-                return 1;
-            else
-                return 0;
-        }
-
-        int proposiciono (int x1, int x2)
-        {
-
-            if ((x1 == 1) || (x2 == 1))
-                return 1;
-            else
-                return 1;
-
-        }
-
-        
-
-
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -49,17 +27,29 @@ namespace WindowsFormsApplication1
 
         }
 
+        int proposiciony(int x1, int x2)
+        {
+            if ((x1 == 1) && (x2 == 1))
+                return 1;
+            else
+                return 0;
+        }
+
+        int proposiciono(int x1, int x2)
+        {
+            if ((x1 == 1) || (x2 == 1))
+                return 1;
+            else
+                return 0;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-        
-              int x1, x2;
+            int x1, x2;
             x1 = Convert.ToInt32(textBox1.Text);
             x2 = Convert.ToInt32(textBox2.Text);
             textBox3.Text = Convert.ToString(proposiciony(x1, x2));
-            textBox4.Text = Convert.ToString(proposiciony(x1, x2));
-
-
-
+            textBox4.Text = Convert.ToString(proposiciono(x1, x2));
         }
     }
 }

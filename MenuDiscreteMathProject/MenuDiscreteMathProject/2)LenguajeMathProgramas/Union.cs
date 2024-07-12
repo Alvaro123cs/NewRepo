@@ -19,30 +19,36 @@ namespace MenuDiscreteMathProject._2_LenguajeMathProgramas
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            // Leer las relaciones de los TextBox
-            var relaciones1 = textBox1.Text.Split(';')
-                                           .Select(relacion => relacion.Trim())
-                                           .ToArray();
-            var relaciones2 = textBox2.Text.Split(';')
-                                           .Select(relacion => relacion.Trim())
-                                           .ToArray();
+            // Leer los conjuntos de los TextBox
+            var conjunto1 = ParseConjunto(textBox1.Text);
+            var conjunto2 = ParseConjunto(textBox2.Text);
 
             // Obtener la unión
-            var union = ObtenerUnion(relaciones1, relaciones2);
+            var union = ObtenerUnion(conjunto1, conjunto2);
 
             // Mostrar el resultado en textBox3
-            textBox3.Text = union.Any() ? string.Join("; ", union) : "No hay elementos en la unión";
+            textBox3.Text = union.Any() ? string.Join(", ", union) : "No hay elementos en la unión";
         }
 
-        private List<string> ObtenerUnion(string[] relaciones1, string[] relaciones2)
+        private List<string> ParseConjunto(string conjunto)
         {
-            HashSet<string> conjuntoRelaciones1 = new HashSet<string>(relaciones1);
-            HashSet<string> conjuntoRelaciones2 = new HashSet<string>(relaciones2);
+            // Eliminar los paréntesis y dividir por comas
+            return conjunto.Trim('(', ')')
+                           .Split(',')
+                           .Select(elemento => elemento.Trim())
+                           .ToList();
+        }
+
+        private List<string> ObtenerUnion(List<string> conjunto1, List<string> conjunto2)
+        {
+            // Crear conjuntos HashSet para realizar la unión
+            HashSet<string> set1 = new HashSet<string>(conjunto1);
+            HashSet<string> set2 = new HashSet<string>(conjunto2);
 
             // Obtener la unión
-            conjuntoRelaciones1.UnionWith(conjuntoRelaciones2);
+            set1.UnionWith(set2);
 
-            return conjuntoRelaciones1.ToList();
+            return set1.ToList();
         }
     }
 }

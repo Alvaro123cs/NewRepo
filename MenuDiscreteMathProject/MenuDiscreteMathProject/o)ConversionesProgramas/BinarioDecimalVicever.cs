@@ -17,20 +17,19 @@ namespace WindowsFormsApplication5
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private string DecimalToBinary(int decimalNumber)
         {
-            try
-            {
-                string binaryNumber = textBox1.Text;
-                double realNumber = BinaryToReal(binaryNumber);
-                textBox2.Text = realNumber.ToString(); // Cambio textBox1.Text a textBox2.Text
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-        }
+            if (decimalNumber == 0)
+                return "0";
 
+            string binary = string.Empty;
+            while (decimalNumber > 0)
+            {
+                binary = (decimalNumber % 2) + binary;
+                decimalNumber /= 2;
+            }
+            return binary;
+        }
 
         private double BinaryToReal(string binary)
         {
@@ -60,51 +59,25 @@ namespace WindowsFormsApplication5
             return result;
         }
 
-
-
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) // Binario a Real
         {
             try
             {
                 string binaryNumber = textBox1.Text;
-                int decimalNumber = BinaryToDecimal(binaryNumber);
-                textBox2.Text = decimalNumber.ToString();
+                double realNumber = BinaryToReal(binaryNumber);
+                textBox2.Text = realNumber.ToString();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-
-        private int BinaryToDecimal(string binary)
-        {
-            int decimalNumber = 0;
-
-
-            for (int i = binary.Length - 1; i >= 0; i--)
-            {
-
-                int digit = int.Parse(binary[i].ToString());
-
-
-                decimalNumber += digit * (int)Math.Pow(2, binary.Length - 1 - i);
-            }
-
-            return decimalNumber;
-        }
-
         private void BinarioDecimalVicever_Load(object sender, EventArgs e)
         {
+        }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
         }
     }
-
-
 }
-

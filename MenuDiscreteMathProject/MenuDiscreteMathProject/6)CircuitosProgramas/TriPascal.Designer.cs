@@ -17,11 +17,14 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TriPascal));
             nTextBox = new TextBox();
             calculateButton = new Button();
             resultLabel = new Label();
             label1 = new Label();
             label2 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // nTextBox
@@ -79,12 +82,22 @@
             label2.TabIndex = 4;
             label2.Text = "Ingrese valor de n";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(28, 272);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(412, 171);
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            // 
             // TriPascal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(882, 470);
+            Controls.Add(pictureBox1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(resultLabel);
@@ -97,6 +110,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Coeficiente Binomial";
             Load += TriPascal_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -104,5 +118,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label resultLabel;
+        private PictureBox pictureBox1;
     }
 }

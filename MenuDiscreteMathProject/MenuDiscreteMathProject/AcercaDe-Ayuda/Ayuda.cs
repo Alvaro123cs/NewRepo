@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Diagnostics; // Asegúrate de importar esto
+using System.Diagnostics;
 
 namespace MenuDiscreteMathProject.AcercaDe_Ayuda
 {
@@ -47,15 +47,15 @@ namespace MenuDiscreteMathProject.AcercaDe_Ayuda
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            OpenUrl("https://facebook.com");
+            OpenUrl("https://github.com/Alvaro123cs/ProyectoDiscreteMath");
         }
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            OpenUrl("https://whatsapp.com");
+            OpenUrl("https://chat.whatsapp.com/Ik4QaA8Dy4lBUotOrCON1A");
         }
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            OpenUrl("https://mail.facebook.com");
+            OpenUrl("https://www.youtube.com/watch?v=iVLDfJihoTs");
         }
 
       

@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             textBox2 = new TextBox();
             button1 = new Button();
             textBox1 = new TextBox();
             label2 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -91,12 +94,22 @@
             label2.Text = "Negación";
             label2.Click += label2_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(30, 161);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(81, 101);
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(468, 316);
+            Controls.Add(pictureBox1);
             Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(button1);
@@ -108,6 +121,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Proposiciones";
             Load += Form1_Load_1;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -119,6 +133,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
+        private PictureBox pictureBox1;
     }
 }
 

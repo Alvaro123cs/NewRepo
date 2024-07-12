@@ -95,7 +95,7 @@
             pictureBox2.BackColor = SystemColors.Control;
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(336, 274);
+            pictureBox2.Location = new Point(225, 274);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(87, 89);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -109,7 +109,7 @@
             pictureBox3.BackColor = SystemColors.Control;
             pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
             pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox3.Location = new Point(226, 274);
+            pictureBox3.Location = new Point(336, 274);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(87, 89);
             pictureBox3.TabIndex = 29;

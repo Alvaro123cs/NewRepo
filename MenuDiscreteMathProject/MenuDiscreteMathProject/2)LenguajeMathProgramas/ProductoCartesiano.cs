@@ -8,7 +8,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApplication6
 {
-         public partial class ProductoCartesiano : Form
+    public partial class ProductoCartesiano : Form
     {
         public ProductoCartesiano()
         {
@@ -18,36 +18,43 @@ namespace WindowsFormsApplication6
         private void button1_Click(object sender, EventArgs e)
         {
             // Leer las relaciones de los TextBox
-            var relaciones1 = textBox1.Text.Split(';')
-                                           .Select(relacion => relacion.Trim())
-                                           .ToArray();
-            var relaciones2 = textBox2.Text.Split(';')
-                                           .Select(relacion => relacion.Trim())
-                                           .ToArray();
+            var relaciones1 = ParseRelaciones(textBox1.Text);
+            var relaciones2 = ParseRelaciones(textBox2.Text);
 
             // Obtener el producto cartesiano
             var productoCartesiano = ObtenerProductoCartesiano(relaciones1, relaciones2);
 
-            // Mostrar el resultado en el TextBox3
+            // Mostrar el resultado en el textBox3
             textBox3.Text = string.Join("; ", productoCartesiano);
         }
 
-        private List<string> ObtenerProductoCartesiano(string[] relaciones1, string[] relaciones2)
+        private List<string> ParseRelaciones(string input)
+        {
+            // Eliminar los paréntesis externos y dividir por punto y coma
+            return input.Trim('(', ')')
+                        .Split(',')
+                        .Select(elemento => elemento.Trim())
+                        .ToList();
+        }
+
+        private List<string> ObtenerProductoCartesiano(List<string> relaciones1, List<string> relaciones2)
         {
             List<string> productoCartesiano = new List<string>();
 
-            foreach (var relacion1 in relaciones1)
+            foreach (var elemento1 in relaciones1)
             {
-                foreach (var relacion2 in relaciones2)
+                foreach (var elemento2 in relaciones2)
                 {
-                    var elementos1 = relacion1.Substring(1, relacion1.Length - 2).Split(',').Select(e => e.Trim()).ToArray();
-                    var elementos2 = relacion2.Substring(1, relacion2.Length - 2).Split(',').Select(e => e.Trim()).ToArray();
-
-                    productoCartesiano.Add($"({elementos1[0]}, {elementos2[1]})");
+                    productoCartesiano.Add($"({elemento1}, {elemento2})");
                 }
             }
 
             return productoCartesiano;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

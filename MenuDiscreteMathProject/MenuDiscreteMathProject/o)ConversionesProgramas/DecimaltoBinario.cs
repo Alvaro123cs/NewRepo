@@ -7,15 +7,27 @@ namespace decimaltobinary
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private string DecimalToBinary(int decimalNumber)
+        {
+            if (decimalNumber == 0)
+                return "0";
+
+            string binary = string.Empty;
+            while (decimalNumber > 0)
+            {
+                binary = (decimalNumber % 2) + binary;
+                decimalNumber /= 2;
+            }
+            return binary;
+        }
+
+        private void button1_Click(object sender, EventArgs e) // Binario a Real
         {
             try
             {
-                int numeroDecimal = int.Parse(label1.Text);
-
-                string numeroBinario = Convert.ToString(numeroDecimal, 2);
-
-                label2.Text = numeroBinario;
+                int decimalNumber = int.Parse(textBox1.Text);
+                string binaryNumber = DecimalToBinary(decimalNumber);
+                textBox2.Text = binaryNumber;
             }
             catch (Exception ex)
             {
